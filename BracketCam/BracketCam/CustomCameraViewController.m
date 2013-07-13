@@ -30,10 +30,15 @@
     //OverlayView *overlayView = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGTH)];
     //[self.camera setCameraOverlayView:overlayView];
     
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(takePictureNow:)];
+    tap.cancelsTouchesInView = YES;
+    tap.numberOfTapsRequired = 1;
+    
     UIImageView *buttonImage = [[UIImageView alloc] initWithFrame:CGRectMake(128, 390, 77, 77)];
     buttonImage.image = [UIImage imageNamed:@"Camera 2.png"];
     buttonImage.tag = 1;
     [buttonImage setUserInteractionEnabled:YES];
+    [buttonImage addGestureRecognizer:tap];
     [self.camera setCameraOverlayView:buttonImage];
     
     
@@ -73,11 +78,16 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
 	UITouch *touch = [touches anyObject];
-    int viewTag=[touch view].tag;
-    NSLog(@"TAG: %di", viewTag);
-    if ([touch tapCount] == 1 && [touch view].tag == 1) {
-		[self singleTap:touch];
-	}
+    if([[touch view] isKindOfClass:[UIImageView class]])
+    {
+        NSLog(@"inside");
+        UIImageView *viewSelected=(UIImageView *)[touch valueForKey:@"view"]; //it returns touched object
+        NSLog(@"tag: %i", viewSelected.tag);
+        if (viewSelected.tag == 1)
+        {
+            [self singleTap:touch];
+        }
+    }
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
@@ -97,4 +107,9 @@
 	[self.camera takePicture];
 }
 
+-(void)takePictureNow
+{
+	NSLog(@"takePictureNow");
+	[self.camera takePicture];
+}
 @end

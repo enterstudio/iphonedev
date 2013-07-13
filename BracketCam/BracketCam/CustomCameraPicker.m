@@ -14,10 +14,8 @@
 
 - (id)init
 {
-    NSLog(@"init");
     if (self = [super init])
     {
-        NSLog(@"inside...");
         self.sourceType = UIImagePickerControllerSourceTypeCamera;
         self.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
         self.cameraDevice = UIImagePickerControllerCameraDeviceRear;
