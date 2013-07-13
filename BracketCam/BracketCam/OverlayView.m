@@ -38,8 +38,9 @@
 
 - (void)captureImageAction
 {
-    NSLog(@"Capture button pressed...");
     [self.cameraController takePictureOnButtonPressed];
 }
+
+
 
 @end

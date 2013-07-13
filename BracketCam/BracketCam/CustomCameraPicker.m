@@ -14,8 +14,10 @@
 
 - (id)init
 {
+    NSLog(@"init");
     if (self = [super init])
     {
+        NSLog(@"inside...");
         self.sourceType = UIImagePickerControllerSourceTypeCamera;
         self.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
         self.cameraDevice = UIImagePickerControllerCameraDeviceRear;
@@ -47,21 +49,15 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)takePicture
+- (void)calliOStakePicture
 {
-    /*
-    if ([self.CCPDelegate respondsToSelector:@selector(cameraStartPicture)])
-    {
-		[self.CCPDelegate performSelector:@selector(cameraStartPicture) withObject:self];
-	}
-     */
     NSLog(@"super picture...");
     [super takePicture];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    NSLog(@"Saving image...");
+    NSLog(@"done taking picture...");
 	UIImage *baseImage = [info objectForKey:UIImagePickerControllerOriginalImage];
 	if (baseImage == nil) return;
 	UIImageWriteToSavedPhotosAlbum(baseImage, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
@@ -69,7 +65,19 @@
 
 - (void)image:(UIImage*)image didFinishSavingWithError:(NSError *)error contextInfo:(NSDictionary*)info
 {
+    NSLog((@"failed to take picture..."));
+}
+
+- (void)writeImageToDocuments:(UIImage*)image
+{
+    NSLog(@"write to disk...");
+	NSData *png = UIImagePNGRepresentation(image);
     
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+	NSError *error = nil;
+    [png writeToFile:[documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"image_%f.png",[[NSDate date] timeIntervalSince1970]]] options:NSAtomicWrite error:&error];
 }
 
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CustomCameraViewController.h"
 
-@interface OverlayView : UIView<CustomCameraDelegate>
+@interface OverlayView : UIView
 {
     CustomCameraViewController *_cameraController;
 }

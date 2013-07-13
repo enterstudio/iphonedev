@@ -14,6 +14,7 @@
 	if (self = [super initWithFrame:frame]) {
 		UIImageView *buttonImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 77, 77)];
 		buttonImage.image = [UIImage imageNamed:@"Camera 2.png"];
+        [buttonImage setUserInteractionEnabled:YES];
 		[self addSubview:buttonImage];
 	}
 	return self;

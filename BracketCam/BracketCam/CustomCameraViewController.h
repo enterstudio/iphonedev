@@ -22,5 +22,5 @@
 @property (nonatomic, assign) id<CustomCameraDelegate>delegate;
 
 -(void)takePictureOnButtonPressed;
-
+-(void)singleTap:(UITouch*)touch;
 @end

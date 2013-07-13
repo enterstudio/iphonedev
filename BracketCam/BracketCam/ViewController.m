@@ -30,13 +30,18 @@
 - (void)takePhoto
 { 
     CustomCameraViewController *cameraController = [[CustomCameraViewController alloc] initWithNibName:nil bundle:nil];
-    [self presentModalViewController:cameraController animated:YES];
+    [self presentViewController:cameraController animated:YES completion:nil];
     cameraController.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)customCameraDidCancelled
+{
+    NSLog(@"Camera did cancel");
 }
 
 @end

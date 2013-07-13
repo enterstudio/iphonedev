@@ -24,5 +24,6 @@
 @interface CustomCameraPicker : UIImagePickerController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (nonatomic, assign) id<CustomCameraPickerDelegate>CCPDelegate;
-- (void)takePicture;
+
+- (void)calliOStakePicture;
 @end

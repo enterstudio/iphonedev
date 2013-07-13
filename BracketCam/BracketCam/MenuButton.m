@@ -14,6 +14,7 @@
 	if (self = [super initWithFrame:frame]) {
 		UIImageView *buttonImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 64, 64)];
 		buttonImage.image = [UIImage imageNamed:@"Tools.png"];
+        [buttonImage setUserInteractionEnabled:YES];
 		[self addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
 		[self addSubview:buttonImage];
 	}
