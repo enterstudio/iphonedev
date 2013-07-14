@@ -20,7 +20,10 @@
 
 @property (nonatomic, strong) CustomCameraPicker *camera;
 @property (nonatomic, assign) id<CustomCameraDelegate>delegate;
+@property (nonatomic, strong) UIImageView *captureImage;
+@property (nonatomic, strong) UIImageView *menuImage;
+@property (nonatomic, strong) UIImageView *flashImage;
 
--(void)takePictureOnButtonPressed;
--(void)singleTap:(UITouch*)touch;
+-(void)camptureImage:(UITouch*)touch;
+-(void)setupCameraLayout;
 @end

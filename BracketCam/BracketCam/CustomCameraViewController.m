@@ -7,11 +7,12 @@
 //
 
 #import "CustomCameraViewController.h"
-#import "OverlayView.h"
-#import "CaptureButton.h"
 
 @implementation CustomCameraViewController
 @synthesize camera=_camera;
+@synthesize captureImage=_captureImage;
+@synthesize menuImage=_menuImage;
+@synthesize flashImage=_flashImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,29 +28,35 @@
     [self.camera.view setBackgroundColor:[UIColor clearColor]];
     self.camera.CCPDelegate = self;
 
-    //OverlayView *overlayView = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGTH)];
-    //[self.camera setCameraOverlayView:overlayView];
-    
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(takePictureNow:)];
-    tap.cancelsTouchesInView = YES;
-    tap.numberOfTapsRequired = 1;
-    
-    UIImageView *buttonImage = [[UIImageView alloc] initWithFrame:CGRectMake(128, 390, 77, 77)];
-    buttonImage.image = [UIImage imageNamed:@"Camera 2.png"];
-    buttonImage.tag = 1;
-    [buttonImage setUserInteractionEnabled:YES];
-    [buttonImage addGestureRecognizer:tap];
-    [self.camera setCameraOverlayView:buttonImage];
-    
-    
-    //CaptureButton *captureButton = [[CaptureButton alloc] initWithFrame:CGRectMake(128, 390, 128, 128)];
-    //[captureButton addTarget:self action:@selector(singleTap:) forControlEvents:UIControlEventTouchUpInside];
-    
-    //[self.camera setCameraOverlayView:captureButton];
+    [self setupCameraLayout];
     
     [self presentViewController:self.camera animated:YES completion:nil];
     
     [self becomeFirstResponder];
+}
+
+- (void)setupCameraLayout
+{
+    UIView *overlayView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    overlayView.opaque = NO;
+    overlayView.alpha = 0.90f;
+    
+    _captureImage = [[UIImageView alloc] initWithFrame:CGRectMake(128, 390, 77, 77)];
+    _captureImage.image = [UIImage imageNamed:@"Camera 2.png"];
+    [_captureImage setUserInteractionEnabled:YES];
+    [overlayView addSubview:_captureImage];
+
+    _menuImage = [[UIImageView alloc] initWithFrame:CGRectMake(15, 25, 64, 64)];
+    _menuImage.image = [UIImage imageNamed:@"Tools.png"];
+    [_menuImage setUserInteractionEnabled:YES];
+    [overlayView addSubview:_menuImage];
+
+    _flashImage = [[UIImageView alloc] initWithFrame:CGRectMake(128, 25, 64, 64)];
+    _flashImage.image = [UIImage imageNamed:@"Brightness Mesure.png"];
+    [_flashImage setUserInteractionEnabled:YES];
+    [overlayView addSubview:_flashImage];
+    
+    [self.camera setCameraOverlayView:overlayView];
 }
 
 - (void)viewDidLoad
@@ -70,29 +77,29 @@
 {
 }
 
--(void)takePictureOnButtonPressed
-{
-	[self.camera calliOStakePicture];
-}
-
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	UITouch *touch = [touches anyObject];
-    if([[touch view] isKindOfClass:[UIImageView class]])
-    {
-        NSLog(@"inside");
-        UIImageView *viewSelected=(UIImageView *)[touch valueForKey:@"view"]; //it returns touched object
-        NSLog(@"tag: %i", viewSelected.tag);
-        if (viewSelected.tag == 1)
-        {
-            [self singleTap:touch];
-        }
-    }
+
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	//UITouch *touch = [touches anyObject];
+	UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:self.view];
+    if( [touch tapCount] == 1)
+    {
+        if ([_captureImage pointInside: [self.view convertPoint:point toView: _captureImage] withEvent:event])
+        {
+            [self camptureImage:touch];
+        }
+        if ([_menuImage pointInside: [self.view convertPoint:point toView: _menuImage] withEvent:event])
+        {
+            // Go to menu
+        }
+        if ([_flashImage pointInside: [self.view convertPoint:point toView: _flashImage] withEvent:event])
+        {
+        }
+    }
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -101,15 +108,26 @@
 	//CGPoint currentTouchPosition = [touch locationInView:self.view];
 }
 
--(void)singleTap:(UITouch*)touch
+-(void)camptureImage:(UITouch*)touch
 {
-	NSLog(@"singleTap");
 	[self.camera takePicture];
 }
 
--(void)takePictureNow
+/*
+ * flash is OFF: 0
+ * flash is ON:  1
+ */
+-(void)changeFlashSetting
 {
-	NSLog(@"takePictureNow");
-	[self.camera takePicture];
+    if ([self.camera cameraFlashMode] == 0)
+    {
+        [self.camera setCameraFlashMode:1];
+        _flashImage.image = [UIImage imageNamed:@"Brightness Mesure On.png"];
+    }
+    else
+    {
+        [self.camera setCameraFlashMode:0];
+        _flashImage.image = [UIImage imageNamed:@"Brightness Mesure.png"];
+    }
 }
 @end

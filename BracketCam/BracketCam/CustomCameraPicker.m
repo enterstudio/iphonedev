@@ -7,7 +7,6 @@
 //
 
 #import "CustomCameraPicker.h"
-#import "OverlayView.h"
 
 @implementation CustomCameraPicker
 @synthesize CCPDelegate=_CCPDelegate;
