@@ -62,7 +62,7 @@
 
 - (void)image:(UIImage*)image didFinishSavingWithError:(NSError *)error contextInfo:(NSDictionary*)info
 {
-    NSLog((@"failed to take picture..."));
+    NSLog((@"failed to take picture... %@", error.description));
 }
 
 - (void)writeImageToDocuments:(UIImage*)image

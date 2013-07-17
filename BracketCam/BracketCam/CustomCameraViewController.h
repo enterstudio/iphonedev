@@ -23,7 +23,11 @@
 @property (nonatomic, strong) UIImageView *captureImage;
 @property (nonatomic, strong) UIImageView *menuImage;
 @property (nonatomic, strong) UIImageView *flashImage;
+@property (nonatomic, strong) UIImageView *flipCameraImage;
+@property (nonatomic, strong) UIImageView *cancelImage;
 
 -(void)camptureImage:(UITouch*)touch;
 -(void)setupCameraLayout;
+-(void)changeFlashSetting;
+-(void)changeCameraDevice;
 @end

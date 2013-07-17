@@ -13,6 +13,8 @@
 @synthesize captureImage=_captureImage;
 @synthesize menuImage=_menuImage;
 @synthesize flashImage=_flashImage;
+@synthesize flipCameraImage=_flipCameraImage;
+@synthesize cancelImage=_cancelImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,20 +43,30 @@
     overlayView.opaque = NO;
     overlayView.alpha = 0.90f;
     
-    _captureImage = [[UIImageView alloc] initWithFrame:CGRectMake(128, 390, 77, 77)];
-    _captureImage.image = [UIImage imageNamed:@"Camera 2.png"];
+    _captureImage = [[UIImageView alloc] initWithFrame:CGRectMake(122, 378, 77, 77)];
+    _captureImage.image = [UIImage imageNamed:@"camera_capture.png"];
     [_captureImage setUserInteractionEnabled:YES];
     [overlayView addSubview:_captureImage];
 
-    _menuImage = [[UIImageView alloc] initWithFrame:CGRectMake(15, 25, 64, 64)];
-    _menuImage.image = [UIImage imageNamed:@"Tools.png"];
+    _menuImage = [[UIImageView alloc] initWithFrame:CGRectMake(17, 25, 43, 32)];
+    _menuImage.image = [UIImage imageNamed:@"camera_menu_button.png"];
     [_menuImage setUserInteractionEnabled:YES];
     [overlayView addSubview:_menuImage];
 
-    _flashImage = [[UIImageView alloc] initWithFrame:CGRectMake(128, 25, 64, 64)];
-    _flashImage.image = [UIImage imageNamed:@"Brightness Mesure.png"];
+    _flashImage = [[UIImageView alloc] initWithFrame:CGRectMake(139, 25, 43, 32)];
+    _flashImage.image = [UIImage imageNamed:@"camera_flash_off_button.png"];
     [_flashImage setUserInteractionEnabled:YES];
     [overlayView addSubview:_flashImage];
+    
+    _flipCameraImage = [[UIImageView alloc] initWithFrame:CGRectMake(260, 25, 43, 32)];
+    _flipCameraImage.image = [UIImage imageNamed:@"camera_flip_button.png"];
+    [_flipCameraImage setUserInteractionEnabled:YES];
+    [overlayView addSubview:_flipCameraImage];
+    
+    _cancelImage = [[UIImageView alloc] initWithFrame:CGRectMake(21, 399, 32, 32)];
+    _cancelImage.image = [UIImage imageNamed:@"camera_cancel_button.png"];
+    [_cancelImage setUserInteractionEnabled:YES];
+    [overlayView addSubview:_cancelImage];
     
     [self.camera setCameraOverlayView:overlayView];
 }
@@ -92,12 +104,17 @@
         {
             [self camptureImage:touch];
         }
-        if ([_menuImage pointInside: [self.view convertPoint:point toView: _menuImage] withEvent:event])
+        else if ([_menuImage pointInside: [self.view convertPoint:point toView: _menuImage] withEvent:event])
         {
             // Go to menu
         }
-        if ([_flashImage pointInside: [self.view convertPoint:point toView: _flashImage] withEvent:event])
+        else if ([_flashImage pointInside: [self.view convertPoint:point toView: _flashImage] withEvent:event])
         {
+            [self changeFlashSetting];
+        }
+        else if ([_flipCameraImage pointInside: [self.view convertPoint:point toView: _flipCameraImage] withEvent:event])
+        {
+            [self changeCameraDevice];
         }
     }
 }
@@ -114,6 +131,22 @@
 }
 
 /*
+ * camera device REAR:  0
+ * camera device FRONT: 1
+ */
+-(void)changeCameraDevice
+{
+    if ([self.camera cameraDevice] == 0)
+    {
+        [self.camera setCameraDevice:1];
+    }
+    else
+    {
+        [self.camera setCameraDevice:0];
+    }
+}
+
+/*
  * flash is OFF: 0
  * flash is ON:  1
  */
@@ -122,12 +155,12 @@
     if ([self.camera cameraFlashMode] == 0)
     {
         [self.camera setCameraFlashMode:1];
-        _flashImage.image = [UIImage imageNamed:@"Brightness Mesure On.png"];
+        _flashImage.image = [UIImage imageNamed:@"camera_flash_on_button.png"];
     }
     else
     {
         [self.camera setCameraFlashMode:0];
-        _flashImage.image = [UIImage imageNamed:@"Brightness Mesure.png"];
+        _flashImage.image = [UIImage imageNamed:@"camera_flash_off_button.png"];
     }
 }
 @end
