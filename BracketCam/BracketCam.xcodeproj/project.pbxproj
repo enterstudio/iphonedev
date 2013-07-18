@@ -31,11 +31,8 @@
 		27B04198178F9DDC00DFFCE5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B04197178F9DDC00DFFCE5 /* Default@2x.png */; };
 		27B0419A178F9DDC00DFFCE5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B04199178F9DDC00DFFCE5 /* Default-568h@2x.png */; };
 		27B0419D178F9DDC00DFFCE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B0419C178F9DDC00DFFCE5 /* ViewController.m */; };
-		27B041BB178F9E2E00DFFCE5 /* Brightness Mesure.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B041A9178F9E2E00DFFCE5 /* Brightness Mesure.png */; };
-		27B041BC178F9E2E00DFFCE5 /* Camera 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B041AA178F9E2E00DFFCE5 /* Camera 2.png */; };
 		27B041BE178F9E2E00DFFCE5 /* CustomCameraPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B041AE178F9E2E00DFFCE5 /* CustomCameraPicker.m */; };
 		27B041BF178F9E2E00DFFCE5 /* CustomCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B041B0178F9E2E00DFFCE5 /* CustomCameraViewController.m */; };
-		27B041C4178F9E2E00DFFCE5 /* Recyclebin Close.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B041B9178F9E2E00DFFCE5 /* Recyclebin Close.png */; };
 		27B041C5178F9E2E00DFFCE5 /* Tools.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B041BA178F9E2E00DFFCE5 /* Tools.png */; };
 /* End PBXBuildFile section */
 
@@ -69,13 +66,10 @@
 		27B04199178F9DDC00DFFCE5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		27B0419B178F9DDC00DFFCE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		27B0419C178F9DDC00DFFCE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		27B041A9178F9E2E00DFFCE5 /* Brightness Mesure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brightness Mesure.png"; sourceTree = "<group>"; };
-		27B041AA178F9E2E00DFFCE5 /* Camera 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Camera 2.png"; sourceTree = "<group>"; };
 		27B041AD178F9E2E00DFFCE5 /* CustomCameraPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCameraPicker.h; sourceTree = "<group>"; };
 		27B041AE178F9E2E00DFFCE5 /* CustomCameraPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCameraPicker.m; sourceTree = "<group>"; };
 		27B041AF178F9E2E00DFFCE5 /* CustomCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCameraViewController.h; sourceTree = "<group>"; };
 		27B041B0178F9E2E00DFFCE5 /* CustomCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCameraViewController.m; sourceTree = "<group>"; };
-		27B041B9178F9E2E00DFFCE5 /* Recyclebin Close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Recyclebin Close.png"; sourceTree = "<group>"; };
 		27B041BA178F9E2E00DFFCE5 /* Tools.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tools.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,9 +170,6 @@
 				2785D4871796132600DBD450 /* camera_menu_button@2x.png */,
 				2760B86A179329810024D271 /* Flip Camera.png */,
 				2760B868179319680024D271 /* Brightness Mesure On.png */,
-				27B041A9178F9E2E00DFFCE5 /* Brightness Mesure.png */,
-				27B041AA178F9E2E00DFFCE5 /* Camera 2.png */,
-				27B041B9178F9E2E00DFFCE5 /* Recyclebin Close.png */,
 				27B041BA178F9E2E00DFFCE5 /* Tools.png */,
 			);
 			name = Graphics;
@@ -239,9 +230,6 @@
 				27B04196178F9DDC00DFFCE5 /* Default.png in Resources */,
 				27B04198178F9DDC00DFFCE5 /* Default@2x.png in Resources */,
 				27B0419A178F9DDC00DFFCE5 /* Default-568h@2x.png in Resources */,
-				27B041BB178F9E2E00DFFCE5 /* Brightness Mesure.png in Resources */,
-				27B041BC178F9E2E00DFFCE5 /* Camera 2.png in Resources */,
-				27B041C4178F9E2E00DFFCE5 /* Recyclebin Close.png in Resources */,
 				27B041C5178F9E2E00DFFCE5 /* Tools.png in Resources */,
 				2760B869179319680024D271 /* Brightness Mesure On.png in Resources */,
 				2760B86B179329810024D271 /* Flip Camera.png in Resources */,
