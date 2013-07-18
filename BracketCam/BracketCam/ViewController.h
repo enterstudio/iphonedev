@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CustomCameraViewController.h"
 
-@interface ViewController : UIViewController<CustomCameraDelegate>
+@interface ViewController : UIViewController
 
 @end

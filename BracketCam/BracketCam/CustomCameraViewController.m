@@ -7,6 +7,7 @@
 //
 
 #import "CustomCameraViewController.h"
+#import "ViewController.h"
 
 @implementation CustomCameraViewController
 @synthesize camera=_camera;
@@ -16,6 +17,7 @@
 @synthesize flipCameraImage=_flipCameraImage;
 @synthesize cancelImage=_cancelImage;
 
+/*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -23,6 +25,7 @@
     }
     return self;
 }
+*/
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -37,6 +40,7 @@
     [self becomeFirstResponder];
 }
 
+ 
 - (void)setupCameraLayout
 {
     UIView *overlayView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
@@ -46,6 +50,8 @@
     _captureImage = [[UIImageView alloc] initWithFrame:CGRectMake(122, 378, 77, 77)];
     _captureImage.image = [UIImage imageNamed:@"camera_capture.png"];
     [_captureImage setUserInteractionEnabled:YES];
+//    UITapGestureRecognizer *captureTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(captureImageTouch:)];
+//    [_captureImage addGestureRecognizer:captureTap];
     [overlayView addSubview:_captureImage];
 
     _menuImage = [[UIImageView alloc] initWithFrame:CGRectMake(17, 25, 43, 32)];
@@ -116,6 +122,17 @@
         {
             [self changeCameraDevice];
         }
+        else if ([_cancelImage pointInside: [self.view convertPoint:point toView: _cancelImage] withEvent:event])
+        {
+            NSLog(@"here cancel");
+            for (UIViewController* uiViewController in self.navigationController.viewControllers) {
+                if ([uiViewController isKindOfClass:[ViewController class]] ) {
+                    ViewController *viewController = (ViewController*)uiViewController;
+                    [self.navigationController popToViewController:viewController animated:YES];
+                }
+            }
+//            [self.navigationController popToViewController:[arrayOfViewControllers objectAtIndex:3] animated:YES];
+        }
     }
 }
 
@@ -129,6 +146,7 @@
 {
 	[self.camera takePicture];
 }
+
 
 /*
  * camera device REAR:  0

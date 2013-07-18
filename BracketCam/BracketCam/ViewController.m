@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "CustomCameraViewController.h"
-
+#import "CustomPreviewViewController.h"
+ 
 @implementation ViewController
 
 - (void)viewDidLoad
@@ -16,7 +17,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor colorWithRed:70/255.f green:70/255.f blue:70/255.f alpha:1];
-    
+/*
     UIButton *takeButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [takeButton setTitle:@"take photo" forState:UIControlStateNormal];
     takeButton.frame = CGRectMake(60, 170, 200, 40);
@@ -27,9 +28,10 @@
     [previeButton setTitle:@"preview photo" forState:UIControlStateNormal];
     previeButton.frame = CGRectMake(60, 220, 200, 40);
     [self.view addSubview:previeButton];
-    [previeButton addTarget:self action:@selector(takePhoto) forControlEvents:UIControlEventTouchUpInside];
-
+    [previeButton addTarget:self action:@selector(previewPhoto) forControlEvents:UIControlEventTouchUpInside];
+ */
 }
+
 
 - (void)takePhoto
 { 
@@ -38,6 +40,14 @@
     cameraController.delegate = self;
 }
 
+- (void)previewPhoto
+{
+    CustomPreviewViewController *previewController = [[CustomPreviewViewController alloc] initWithNibName:nil bundle:nil];
+    [self presentViewController:previewController animated:YES completion:nil];
+    previewController.delegate = self;
+}
+
+ 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

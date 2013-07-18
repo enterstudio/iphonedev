@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "27B0417F178F9DDC00DFFCE5"
+               BlueprintIdentifier = "2785D4A417961F1500DBD450"
                BuildableName = "BracketCam.app"
                BlueprintName = "BracketCam"
                ReferencedContainer = "container:BracketCam.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27B0417F178F9DDC00DFFCE5"
+            BlueprintIdentifier = "2785D4A417961F1500DBD450"
             BuildableName = "BracketCam.app"
             BlueprintName = "BracketCam"
             ReferencedContainer = "container:BracketCam.xcodeproj">
@@ -51,7 +51,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27B0417F178F9DDC00DFFCE5"
+            BlueprintIdentifier = "2785D4A417961F1500DBD450"
             BuildableName = "BracketCam.app"
             BlueprintName = "BracketCam"
             ReferencedContainer = "container:BracketCam.xcodeproj">
@@ -69,7 +69,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27B0417F178F9DDC00DFFCE5"
+            BlueprintIdentifier = "2785D4A417961F1500DBD450"
             BuildableName = "BracketCam.app"
             BlueprintName = "BracketCam"
             ReferencedContainer = "container:BracketCam.xcodeproj">

@@ -7,184 +7,188 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2760B869179319680024D271 /* Brightness Mesure On.png in Resources */ = {isa = PBXBuildFile; fileRef = 2760B868179319680024D271 /* Brightness Mesure On.png */; };
-		2760B86B179329810024D271 /* Flip Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 2760B86A179329810024D271 /* Flip Camera.png */; };
-		2785D4881796132600DBD450 /* camera_cancel_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D47E1796132600DBD450 /* camera_cancel_button.png */; };
-		2785D4891796132600DBD450 /* camera_cancel_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D47F1796132600DBD450 /* camera_cancel_button@2x.png */; };
-		2785D48A1796132600DBD450 /* camera_capture.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4801796132600DBD450 /* camera_capture.png */; };
-		2785D48B1796132600DBD450 /* camera_capture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4811796132600DBD450 /* camera_capture@2x.png */; };
-		2785D48C1796132600DBD450 /* camera_flash_off_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4821796132600DBD450 /* camera_flash_off_button.png */; };
-		2785D48D1796132600DBD450 /* camera_flash_off_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4831796132600DBD450 /* camera_flash_off_button@2x.png */; };
-		2785D48E1796132600DBD450 /* camera_flip_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4841796132600DBD450 /* camera_flip_button.png */; };
-		2785D48F1796132600DBD450 /* camera_flip_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4851796132600DBD450 /* camera_flip_button@2x.png */; };
-		2785D4901796132600DBD450 /* camera_menu_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4861796132600DBD450 /* camera_menu_button.png */; };
-		2785D4911796132600DBD450 /* camera_menu_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4871796132600DBD450 /* camera_menu_button@2x.png */; };
-		2785D4941796150B00DBD450 /* camera_flash_on_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4921796150B00DBD450 /* camera_flash_on_button.png */; };
-		2785D4951796150B00DBD450 /* camera_flash_on_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4931796150B00DBD450 /* camera_flash_on_button@2x.png */; };
-		27B04184178F9DDC00DFFCE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B04183178F9DDC00DFFCE5 /* UIKit.framework */; };
-		27B04186178F9DDC00DFFCE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B04185178F9DDC00DFFCE5 /* Foundation.framework */; };
-		27B04188178F9DDC00DFFCE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B04187178F9DDC00DFFCE5 /* CoreGraphics.framework */; };
-		27B0418E178F9DDC00DFFCE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27B0418C178F9DDC00DFFCE5 /* InfoPlist.strings */; };
-		27B04190178F9DDC00DFFCE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B0418F178F9DDC00DFFCE5 /* main.m */; };
-		27B04194178F9DDC00DFFCE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B04193178F9DDC00DFFCE5 /* AppDelegate.m */; };
-		27B04196178F9DDC00DFFCE5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B04195178F9DDC00DFFCE5 /* Default.png */; };
-		27B04198178F9DDC00DFFCE5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B04197178F9DDC00DFFCE5 /* Default@2x.png */; };
-		27B0419A178F9DDC00DFFCE5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B04199178F9DDC00DFFCE5 /* Default-568h@2x.png */; };
-		27B0419D178F9DDC00DFFCE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B0419C178F9DDC00DFFCE5 /* ViewController.m */; };
-		27B041BE178F9E2E00DFFCE5 /* CustomCameraPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B041AE178F9E2E00DFFCE5 /* CustomCameraPicker.m */; };
-		27B041BF178F9E2E00DFFCE5 /* CustomCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B041B0178F9E2E00DFFCE5 /* CustomCameraViewController.m */; };
-		27B041C5178F9E2E00DFFCE5 /* Tools.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B041BA178F9E2E00DFFCE5 /* Tools.png */; };
+		2785D4A917961F1500DBD450 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2785D4A817961F1500DBD450 /* UIKit.framework */; };
+		2785D4AB17961F1500DBD450 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2785D4AA17961F1500DBD450 /* Foundation.framework */; };
+		2785D4AD17961F1500DBD450 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2785D4AC17961F1500DBD450 /* CoreGraphics.framework */; };
+		2785D4B317961F1500DBD450 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4B117961F1500DBD450 /* InfoPlist.strings */; };
+		2785D4B517961F1500DBD450 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2785D4B417961F1500DBD450 /* main.m */; };
+		2785D4B917961F1500DBD450 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2785D4B817961F1500DBD450 /* AppDelegate.m */; };
+		2785D4BB17961F1600DBD450 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4BA17961F1600DBD450 /* Default.png */; };
+		2785D4BD17961F1600DBD450 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4BC17961F1600DBD450 /* Default@2x.png */; };
+		2785D4BF17961F1600DBD450 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4BE17961F1600DBD450 /* Default-568h@2x.png */; };
+		2785D4C217961F1600DBD450 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4C017961F1600DBD450 /* MainStoryboard.storyboard */; };
+		2785D4C517961F1600DBD450 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2785D4C417961F1600DBD450 /* ViewController.m */; };
+		2785D4DB1796237500DBD450 /* camera_cancel_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4CB1796237500DBD450 /* camera_cancel_button.png */; };
+		2785D4DC1796237500DBD450 /* camera_cancel_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4CC1796237500DBD450 /* camera_cancel_button@2x.png */; };
+		2785D4DD1796237500DBD450 /* camera_capture.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4CD1796237500DBD450 /* camera_capture.png */; };
+		2785D4DE1796237500DBD450 /* camera_capture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4CE1796237500DBD450 /* camera_capture@2x.png */; };
+		2785D4DF1796237500DBD450 /* camera_flash_off_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4CF1796237500DBD450 /* camera_flash_off_button.png */; };
+		2785D4E01796237500DBD450 /* camera_flash_off_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4D01796237500DBD450 /* camera_flash_off_button@2x.png */; };
+		2785D4E11796237500DBD450 /* camera_flash_on_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4D11796237500DBD450 /* camera_flash_on_button.png */; };
+		2785D4E21796237500DBD450 /* camera_flash_on_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4D21796237500DBD450 /* camera_flash_on_button@2x.png */; };
+		2785D4E31796237500DBD450 /* camera_flip_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4D31796237500DBD450 /* camera_flip_button.png */; };
+		2785D4E41796237500DBD450 /* camera_flip_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4D41796237500DBD450 /* camera_flip_button@2x.png */; };
+		2785D4E51796237500DBD450 /* camera_menu_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4D51796237500DBD450 /* camera_menu_button.png */; };
+		2785D4E61796237500DBD450 /* camera_menu_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2785D4D61796237500DBD450 /* camera_menu_button@2x.png */; };
+		2785D4E71796237500DBD450 /* CustomCameraPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2785D4D81796237500DBD450 /* CustomCameraPicker.m */; };
+		2785D4E81796237500DBD450 /* CustomCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2785D4DA1796237500DBD450 /* CustomCameraViewController.m */; };
+		2785D4EF1796257900DBD450 /* CustomPreviewPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2785D4EC1796257900DBD450 /* CustomPreviewPicker.m */; };
+		2785D4F01796257900DBD450 /* CustomPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2785D4EE1796257900DBD450 /* CustomPreviewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2760B868179319680024D271 /* Brightness Mesure On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brightness Mesure On.png"; sourceTree = "<group>"; };
-		2760B86A179329810024D271 /* Flip Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flip Camera.png"; sourceTree = "<group>"; };
-		2785D47E1796132600DBD450 /* camera_cancel_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_cancel_button.png; sourceTree = "<group>"; };
-		2785D47F1796132600DBD450 /* camera_cancel_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_cancel_button@2x.png"; sourceTree = "<group>"; };
-		2785D4801796132600DBD450 /* camera_capture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_capture.png; sourceTree = "<group>"; };
-		2785D4811796132600DBD450 /* camera_capture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_capture@2x.png"; sourceTree = "<group>"; };
-		2785D4821796132600DBD450 /* camera_flash_off_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_flash_off_button.png; sourceTree = "<group>"; };
-		2785D4831796132600DBD450 /* camera_flash_off_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_flash_off_button@2x.png"; sourceTree = "<group>"; };
-		2785D4841796132600DBD450 /* camera_flip_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_flip_button.png; sourceTree = "<group>"; };
-		2785D4851796132600DBD450 /* camera_flip_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_flip_button@2x.png"; sourceTree = "<group>"; };
-		2785D4861796132600DBD450 /* camera_menu_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_menu_button.png; sourceTree = "<group>"; };
-		2785D4871796132600DBD450 /* camera_menu_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_menu_button@2x.png"; sourceTree = "<group>"; };
-		2785D4921796150B00DBD450 /* camera_flash_on_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_flash_on_button.png; sourceTree = "<group>"; };
-		2785D4931796150B00DBD450 /* camera_flash_on_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_flash_on_button@2x.png"; sourceTree = "<group>"; };
-		27B04180178F9DDC00DFFCE5 /* BracketCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BracketCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		27B04183178F9DDC00DFFCE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		27B04185178F9DDC00DFFCE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		27B04187178F9DDC00DFFCE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		27B0418B178F9DDC00DFFCE5 /* BracketCam-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BracketCam-Info.plist"; sourceTree = "<group>"; };
-		27B0418D178F9DDC00DFFCE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		27B0418F178F9DDC00DFFCE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		27B04191178F9DDC00DFFCE5 /* BracketCam-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BracketCam-Prefix.pch"; sourceTree = "<group>"; };
-		27B04192178F9DDC00DFFCE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		27B04193178F9DDC00DFFCE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		27B04195178F9DDC00DFFCE5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		27B04197178F9DDC00DFFCE5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		27B04199178F9DDC00DFFCE5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		27B0419B178F9DDC00DFFCE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		27B0419C178F9DDC00DFFCE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		27B041AD178F9E2E00DFFCE5 /* CustomCameraPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCameraPicker.h; sourceTree = "<group>"; };
-		27B041AE178F9E2E00DFFCE5 /* CustomCameraPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCameraPicker.m; sourceTree = "<group>"; };
-		27B041AF178F9E2E00DFFCE5 /* CustomCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCameraViewController.h; sourceTree = "<group>"; };
-		27B041B0178F9E2E00DFFCE5 /* CustomCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCameraViewController.m; sourceTree = "<group>"; };
-		27B041BA178F9E2E00DFFCE5 /* Tools.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tools.png; sourceTree = "<group>"; };
+		2785D4A517961F1500DBD450 /* BracketCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BracketCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2785D4A817961F1500DBD450 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2785D4AA17961F1500DBD450 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2785D4AC17961F1500DBD450 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2785D4B017961F1500DBD450 /* BracketCam-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BracketCam-Info.plist"; sourceTree = "<group>"; };
+		2785D4B217961F1500DBD450 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2785D4B417961F1500DBD450 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2785D4B617961F1500DBD450 /* BracketCam-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BracketCam-Prefix.pch"; sourceTree = "<group>"; };
+		2785D4B717961F1500DBD450 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2785D4B817961F1500DBD450 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2785D4BA17961F1600DBD450 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2785D4BC17961F1600DBD450 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2785D4BE17961F1600DBD450 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2785D4C117961F1600DBD450 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2785D4C317961F1600DBD450 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2785D4C417961F1600DBD450 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2785D4CB1796237500DBD450 /* camera_cancel_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_cancel_button.png; sourceTree = "<group>"; };
+		2785D4CC1796237500DBD450 /* camera_cancel_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_cancel_button@2x.png"; sourceTree = "<group>"; };
+		2785D4CD1796237500DBD450 /* camera_capture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_capture.png; sourceTree = "<group>"; };
+		2785D4CE1796237500DBD450 /* camera_capture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_capture@2x.png"; sourceTree = "<group>"; };
+		2785D4CF1796237500DBD450 /* camera_flash_off_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_flash_off_button.png; sourceTree = "<group>"; };
+		2785D4D01796237500DBD450 /* camera_flash_off_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_flash_off_button@2x.png"; sourceTree = "<group>"; };
+		2785D4D11796237500DBD450 /* camera_flash_on_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_flash_on_button.png; sourceTree = "<group>"; };
+		2785D4D21796237500DBD450 /* camera_flash_on_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_flash_on_button@2x.png"; sourceTree = "<group>"; };
+		2785D4D31796237500DBD450 /* camera_flip_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_flip_button.png; sourceTree = "<group>"; };
+		2785D4D41796237500DBD450 /* camera_flip_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_flip_button@2x.png"; sourceTree = "<group>"; };
+		2785D4D51796237500DBD450 /* camera_menu_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_menu_button.png; sourceTree = "<group>"; };
+		2785D4D61796237500DBD450 /* camera_menu_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_menu_button@2x.png"; sourceTree = "<group>"; };
+		2785D4D71796237500DBD450 /* CustomCameraPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCameraPicker.h; sourceTree = "<group>"; };
+		2785D4D81796237500DBD450 /* CustomCameraPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCameraPicker.m; sourceTree = "<group>"; };
+		2785D4D91796237500DBD450 /* CustomCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCameraViewController.h; sourceTree = "<group>"; };
+		2785D4DA1796237500DBD450 /* CustomCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCameraViewController.m; sourceTree = "<group>"; };
+		2785D4EB1796257900DBD450 /* CustomPreviewPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPreviewPicker.h; sourceTree = "<group>"; };
+		2785D4EC1796257900DBD450 /* CustomPreviewPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPreviewPicker.m; sourceTree = "<group>"; };
+		2785D4ED1796257900DBD450 /* CustomPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPreviewViewController.h; sourceTree = "<group>"; };
+		2785D4EE1796257900DBD450 /* CustomPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPreviewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		27B0417D178F9DDC00DFFCE5 /* Frameworks */ = {
+		2785D4A217961F1500DBD450 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B04184178F9DDC00DFFCE5 /* UIKit.framework in Frameworks */,
-				27B04186178F9DDC00DFFCE5 /* Foundation.framework in Frameworks */,
-				27B04188178F9DDC00DFFCE5 /* CoreGraphics.framework in Frameworks */,
+				2785D4A917961F1500DBD450 /* UIKit.framework in Frameworks */,
+				2785D4AB17961F1500DBD450 /* Foundation.framework in Frameworks */,
+				2785D4AD17961F1500DBD450 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		27B04177178F9DDC00DFFCE5 = {
+		2785D49C17961F1500DBD450 = {
 			isa = PBXGroup;
 			children = (
-				27B04189178F9DDC00DFFCE5 /* BracketCam */,
-				27B04182178F9DDC00DFFCE5 /* Frameworks */,
-				27B04181178F9DDC00DFFCE5 /* Products */,
+				2785D4AE17961F1500DBD450 /* BracketCam */,
+				2785D4A717961F1500DBD450 /* Frameworks */,
+				2785D4A617961F1500DBD450 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		27B04181178F9DDC00DFFCE5 /* Products */ = {
+		2785D4A617961F1500DBD450 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27B04180178F9DDC00DFFCE5 /* BracketCam.app */,
+				2785D4A517961F1500DBD450 /* BracketCam.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		27B04182178F9DDC00DFFCE5 /* Frameworks */ = {
+		2785D4A717961F1500DBD450 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27B04183178F9DDC00DFFCE5 /* UIKit.framework */,
-				27B04185178F9DDC00DFFCE5 /* Foundation.framework */,
-				27B04187178F9DDC00DFFCE5 /* CoreGraphics.framework */,
+				2785D4A817961F1500DBD450 /* UIKit.framework */,
+				2785D4AA17961F1500DBD450 /* Foundation.framework */,
+				2785D4AC17961F1500DBD450 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		27B04189178F9DDC00DFFCE5 /* BracketCam */ = {
+		2785D4AE17961F1500DBD450 /* BracketCam */ = {
 			isa = PBXGroup;
 			children = (
-				27B041C6178F9E3500DFFCE5 /* Camera */,
-				27B04192178F9DDC00DFFCE5 /* AppDelegate.h */,
-				27B04193178F9DDC00DFFCE5 /* AppDelegate.m */,
-				27B0419B178F9DDC00DFFCE5 /* ViewController.h */,
-				27B0419C178F9DDC00DFFCE5 /* ViewController.m */,
-				27B0418A178F9DDC00DFFCE5 /* Supporting Files */,
+				2785D4EA1796239000DBD450 /* Camera */,
+				2785D4B717961F1500DBD450 /* AppDelegate.h */,
+				2785D4B817961F1500DBD450 /* AppDelegate.m */,
+				2785D4C017961F1600DBD450 /* MainStoryboard.storyboard */,
+				2785D4C317961F1600DBD450 /* ViewController.h */,
+				2785D4C417961F1600DBD450 /* ViewController.m */,
+				2785D4AF17961F1500DBD450 /* Supporting Files */,
 			);
 			path = BracketCam;
 			sourceTree = "<group>";
 		};
-		27B0418A178F9DDC00DFFCE5 /* Supporting Files */ = {
+		2785D4AF17961F1500DBD450 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				27B041C7178F9E3D00DFFCE5 /* Graphics */,
-				27B0418B178F9DDC00DFFCE5 /* BracketCam-Info.plist */,
-				27B0418C178F9DDC00DFFCE5 /* InfoPlist.strings */,
-				27B0418F178F9DDC00DFFCE5 /* main.m */,
-				27B04191178F9DDC00DFFCE5 /* BracketCam-Prefix.pch */,
-				27B04195178F9DDC00DFFCE5 /* Default.png */,
-				27B04197178F9DDC00DFFCE5 /* Default@2x.png */,
-				27B04199178F9DDC00DFFCE5 /* Default-568h@2x.png */,
+				2785D4E91796237C00DBD450 /* Graphics */,
+				2785D4B017961F1500DBD450 /* BracketCam-Info.plist */,
+				2785D4B117961F1500DBD450 /* InfoPlist.strings */,
+				2785D4B417961F1500DBD450 /* main.m */,
+				2785D4B617961F1500DBD450 /* BracketCam-Prefix.pch */,
+				2785D4BA17961F1600DBD450 /* Default.png */,
+				2785D4BC17961F1600DBD450 /* Default@2x.png */,
+				2785D4BE17961F1600DBD450 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		27B041C6178F9E3500DFFCE5 /* Camera */ = {
+		2785D4E91796237C00DBD450 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				27B041AD178F9E2E00DFFCE5 /* CustomCameraPicker.h */,
-				27B041AE178F9E2E00DFFCE5 /* CustomCameraPicker.m */,
-				27B041AF178F9E2E00DFFCE5 /* CustomCameraViewController.h */,
-				27B041B0178F9E2E00DFFCE5 /* CustomCameraViewController.m */,
-			);
-			name = Camera;
-			sourceTree = "<group>";
-		};
-		27B041C7178F9E3D00DFFCE5 /* Graphics */ = {
-			isa = PBXGroup;
-			children = (
-				2785D4921796150B00DBD450 /* camera_flash_on_button.png */,
-				2785D4931796150B00DBD450 /* camera_flash_on_button@2x.png */,
-				2785D47E1796132600DBD450 /* camera_cancel_button.png */,
-				2785D47F1796132600DBD450 /* camera_cancel_button@2x.png */,
-				2785D4801796132600DBD450 /* camera_capture.png */,
-				2785D4811796132600DBD450 /* camera_capture@2x.png */,
-				2785D4821796132600DBD450 /* camera_flash_off_button.png */,
-				2785D4831796132600DBD450 /* camera_flash_off_button@2x.png */,
-				2785D4841796132600DBD450 /* camera_flip_button.png */,
-				2785D4851796132600DBD450 /* camera_flip_button@2x.png */,
-				2785D4861796132600DBD450 /* camera_menu_button.png */,
-				2785D4871796132600DBD450 /* camera_menu_button@2x.png */,
-				2760B86A179329810024D271 /* Flip Camera.png */,
-				2760B868179319680024D271 /* Brightness Mesure On.png */,
-				27B041BA178F9E2E00DFFCE5 /* Tools.png */,
+				2785D4CB1796237500DBD450 /* camera_cancel_button.png */,
+				2785D4CC1796237500DBD450 /* camera_cancel_button@2x.png */,
+				2785D4CD1796237500DBD450 /* camera_capture.png */,
+				2785D4CE1796237500DBD450 /* camera_capture@2x.png */,
+				2785D4CF1796237500DBD450 /* camera_flash_off_button.png */,
+				2785D4D01796237500DBD450 /* camera_flash_off_button@2x.png */,
+				2785D4D11796237500DBD450 /* camera_flash_on_button.png */,
+				2785D4D21796237500DBD450 /* camera_flash_on_button@2x.png */,
+				2785D4D31796237500DBD450 /* camera_flip_button.png */,
+				2785D4D41796237500DBD450 /* camera_flip_button@2x.png */,
+				2785D4D51796237500DBD450 /* camera_menu_button.png */,
+				2785D4D61796237500DBD450 /* camera_menu_button@2x.png */,
 			);
 			name = Graphics;
+			sourceTree = "<group>";
+		};
+		2785D4EA1796239000DBD450 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				2785D4EB1796257900DBD450 /* CustomPreviewPicker.h */,
+				2785D4EC1796257900DBD450 /* CustomPreviewPicker.m */,
+				2785D4ED1796257900DBD450 /* CustomPreviewViewController.h */,
+				2785D4EE1796257900DBD450 /* CustomPreviewViewController.m */,
+				2785D4D71796237500DBD450 /* CustomCameraPicker.h */,
+				2785D4D81796237500DBD450 /* CustomCameraPicker.m */,
+				2785D4D91796237500DBD450 /* CustomCameraViewController.h */,
+				2785D4DA1796237500DBD450 /* CustomCameraViewController.m */,
+			);
+			name = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27B0417F178F9DDC00DFFCE5 /* BracketCam */ = {
+		2785D4A417961F1500DBD450 /* BracketCam */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27B041A6178F9DDC00DFFCE5 /* Build configuration list for PBXNativeTarget "BracketCam" */;
+			buildConfigurationList = 2785D4C817961F1600DBD450 /* Build configuration list for PBXNativeTarget "BracketCam" */;
 			buildPhases = (
-				27B0417C178F9DDC00DFFCE5 /* Sources */,
-				27B0417D178F9DDC00DFFCE5 /* Frameworks */,
-				27B0417E178F9DDC00DFFCE5 /* Resources */,
+				2785D4A117961F1500DBD450 /* Sources */,
+				2785D4A217961F1500DBD450 /* Frameworks */,
+				2785D4A317961F1500DBD450 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -192,92 +196,100 @@
 			);
 			name = BracketCam;
 			productName = BracketCam;
-			productReference = 27B04180178F9DDC00DFFCE5 /* BracketCam.app */;
+			productReference = 2785D4A517961F1500DBD450 /* BracketCam.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		27B04178178F9DDC00DFFCE5 /* Project object */ = {
+		2785D49D17961F1500DBD450 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "mike tihonchik";
 			};
-			buildConfigurationList = 27B0417B178F9DDC00DFFCE5 /* Build configuration list for PBXProject "BracketCam" */;
+			buildConfigurationList = 2785D4A017961F1500DBD450 /* Build configuration list for PBXProject "BracketCam" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 27B04177178F9DDC00DFFCE5;
-			productRefGroup = 27B04181178F9DDC00DFFCE5 /* Products */;
+			mainGroup = 2785D49C17961F1500DBD450;
+			productRefGroup = 2785D4A617961F1500DBD450 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27B0417F178F9DDC00DFFCE5 /* BracketCam */,
+				2785D4A417961F1500DBD450 /* BracketCam */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		27B0417E178F9DDC00DFFCE5 /* Resources */ = {
+		2785D4A317961F1500DBD450 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B0418E178F9DDC00DFFCE5 /* InfoPlist.strings in Resources */,
-				27B04196178F9DDC00DFFCE5 /* Default.png in Resources */,
-				27B04198178F9DDC00DFFCE5 /* Default@2x.png in Resources */,
-				27B0419A178F9DDC00DFFCE5 /* Default-568h@2x.png in Resources */,
-				27B041C5178F9E2E00DFFCE5 /* Tools.png in Resources */,
-				2760B869179319680024D271 /* Brightness Mesure On.png in Resources */,
-				2760B86B179329810024D271 /* Flip Camera.png in Resources */,
-				2785D4881796132600DBD450 /* camera_cancel_button.png in Resources */,
-				2785D4891796132600DBD450 /* camera_cancel_button@2x.png in Resources */,
-				2785D48A1796132600DBD450 /* camera_capture.png in Resources */,
-				2785D48B1796132600DBD450 /* camera_capture@2x.png in Resources */,
-				2785D48C1796132600DBD450 /* camera_flash_off_button.png in Resources */,
-				2785D48D1796132600DBD450 /* camera_flash_off_button@2x.png in Resources */,
-				2785D48E1796132600DBD450 /* camera_flip_button.png in Resources */,
-				2785D48F1796132600DBD450 /* camera_flip_button@2x.png in Resources */,
-				2785D4901796132600DBD450 /* camera_menu_button.png in Resources */,
-				2785D4911796132600DBD450 /* camera_menu_button@2x.png in Resources */,
-				2785D4941796150B00DBD450 /* camera_flash_on_button.png in Resources */,
-				2785D4951796150B00DBD450 /* camera_flash_on_button@2x.png in Resources */,
+				2785D4B317961F1500DBD450 /* InfoPlist.strings in Resources */,
+				2785D4BB17961F1600DBD450 /* Default.png in Resources */,
+				2785D4BD17961F1600DBD450 /* Default@2x.png in Resources */,
+				2785D4BF17961F1600DBD450 /* Default-568h@2x.png in Resources */,
+				2785D4C217961F1600DBD450 /* MainStoryboard.storyboard in Resources */,
+				2785D4DB1796237500DBD450 /* camera_cancel_button.png in Resources */,
+				2785D4DC1796237500DBD450 /* camera_cancel_button@2x.png in Resources */,
+				2785D4DD1796237500DBD450 /* camera_capture.png in Resources */,
+				2785D4DE1796237500DBD450 /* camera_capture@2x.png in Resources */,
+				2785D4DF1796237500DBD450 /* camera_flash_off_button.png in Resources */,
+				2785D4E01796237500DBD450 /* camera_flash_off_button@2x.png in Resources */,
+				2785D4E11796237500DBD450 /* camera_flash_on_button.png in Resources */,
+				2785D4E21796237500DBD450 /* camera_flash_on_button@2x.png in Resources */,
+				2785D4E31796237500DBD450 /* camera_flip_button.png in Resources */,
+				2785D4E41796237500DBD450 /* camera_flip_button@2x.png in Resources */,
+				2785D4E51796237500DBD450 /* camera_menu_button.png in Resources */,
+				2785D4E61796237500DBD450 /* camera_menu_button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		27B0417C178F9DDC00DFFCE5 /* Sources */ = {
+		2785D4A117961F1500DBD450 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B04190178F9DDC00DFFCE5 /* main.m in Sources */,
-				27B04194178F9DDC00DFFCE5 /* AppDelegate.m in Sources */,
-				27B0419D178F9DDC00DFFCE5 /* ViewController.m in Sources */,
-				27B041BE178F9E2E00DFFCE5 /* CustomCameraPicker.m in Sources */,
-				27B041BF178F9E2E00DFFCE5 /* CustomCameraViewController.m in Sources */,
+				2785D4B517961F1500DBD450 /* main.m in Sources */,
+				2785D4B917961F1500DBD450 /* AppDelegate.m in Sources */,
+				2785D4C517961F1600DBD450 /* ViewController.m in Sources */,
+				2785D4E71796237500DBD450 /* CustomCameraPicker.m in Sources */,
+				2785D4E81796237500DBD450 /* CustomCameraViewController.m in Sources */,
+				2785D4EF1796257900DBD450 /* CustomPreviewPicker.m in Sources */,
+				2785D4F01796257900DBD450 /* CustomPreviewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		27B0418C178F9DDC00DFFCE5 /* InfoPlist.strings */ = {
+		2785D4B117961F1500DBD450 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				27B0418D178F9DDC00DFFCE5 /* en */,
+				2785D4B217961F1500DBD450 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2785D4C017961F1600DBD450 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2785D4C117961F1600DBD450 /* en */,
+			);
+			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		27B041A4178F9DDC00DFFCE5 /* Debug */ = {
+		2785D4C617961F1600DBD450 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -305,11 +317,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		27B041A5178F9DDC00DFFCE5 /* Release */ = {
+		2785D4C717961F1600DBD450 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -330,12 +341,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		27B041A7178F9DDC00DFFCE5 /* Debug */ = {
+		2785D4C917961F1600DBD450 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -346,7 +356,7 @@
 			};
 			name = Debug;
 		};
-		27B041A8178F9DDC00DFFCE5 /* Release */ = {
+		2785D4CA17961F1600DBD450 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -360,25 +370,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27B0417B178F9DDC00DFFCE5 /* Build configuration list for PBXProject "BracketCam" */ = {
+		2785D4A017961F1500DBD450 /* Build configuration list for PBXProject "BracketCam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27B041A4178F9DDC00DFFCE5 /* Debug */,
-				27B041A5178F9DDC00DFFCE5 /* Release */,
+				2785D4C617961F1600DBD450 /* Debug */,
+				2785D4C717961F1600DBD450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27B041A6178F9DDC00DFFCE5 /* Build configuration list for PBXNativeTarget "BracketCam" */ = {
+		2785D4C817961F1600DBD450 /* Build configuration list for PBXNativeTarget "BracketCam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27B041A7178F9DDC00DFFCE5 /* Debug */,
-				27B041A8178F9DDC00DFFCE5 /* Release */,
+				2785D4C917961F1600DBD450 /* Debug */,
+				2785D4CA17961F1600DBD450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 27B04178178F9DDC00DFFCE5 /* Project object */;
+	rootObject = 2785D49D17961F1500DBD450 /* Project object */;
 }
