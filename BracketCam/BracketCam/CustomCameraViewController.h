@@ -26,7 +26,8 @@
 @property (nonatomic, strong) UIImageView *flipCameraImage;
 @property (nonatomic, strong) UIImageView *cancelImage;
 
--(void)camptureImage:(UITouch*)touch;
+//-(void)camptureImage:(UITouch*)touch;
+-(void)captureImageTouch;
 -(void)setupCameraLayout;
 -(void)changeFlashSetting;
 -(void)changeCameraDevice;
