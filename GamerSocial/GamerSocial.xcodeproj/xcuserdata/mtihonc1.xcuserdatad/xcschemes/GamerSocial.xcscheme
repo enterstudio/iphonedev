@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
+   LastUpgradeVersion = "0500"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6FEBE31D17DE489200271345"
+               BlueprintIdentifier = "6F0CCEF417ECB39B00993392"
                BuildableName = "GamerSocial.app"
                BlueprintName = "GamerSocial"
                ReferencedContainer = "container:GamerSocial.xcodeproj">
@@ -28,11 +28,21 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6F0CCF1B17ECB39C00993392"
+               BuildableName = "GamerSocialTests.xctest"
+               BlueprintName = "GamerSocialTests"
+               ReferencedContainer = "container:GamerSocial.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6FEBE31D17DE489200271345"
+            BlueprintIdentifier = "6F0CCEF417ECB39B00993392"
             BuildableName = "GamerSocial.app"
             BlueprintName = "GamerSocial"
             ReferencedContainer = "container:GamerSocial.xcodeproj">
@@ -51,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6FEBE31D17DE489200271345"
+            BlueprintIdentifier = "6F0CCEF417ECB39B00993392"
             BuildableName = "GamerSocial.app"
             BlueprintName = "GamerSocial"
             ReferencedContainer = "container:GamerSocial.xcodeproj">
@@ -69,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6FEBE31D17DE489200271345"
+            BlueprintIdentifier = "6F0CCEF417ECB39B00993392"
             BuildableName = "GamerSocial.app"
             BlueprintName = "GamerSocial"
             ReferencedContainer = "container:GamerSocial.xcodeproj">

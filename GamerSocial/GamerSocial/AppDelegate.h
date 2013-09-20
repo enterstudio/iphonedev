@@ -2,18 +2,16 @@
 //  AppDelegate.h
 //  GamerSocial
 //
-//  Created by mike.tihonchik on 9/9/13.
+//  Created by mike.tihonchik on 9/20/13.
 //  Copyright (c) 2013 mike.tihonchik. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "SlideOutMenuViewController.h"
+@class MainViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate> {
-    SlideOutMenuViewController *slideMenu;
-}
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) SlideOutMenuViewController *slideMenu;
+
+@property (strong, nonatomic) MainViewController *viewController;
 
 @end
