@@ -7,8 +7,9 @@
 //
 
 #import "PresentationViewController.h"
+#import "XBoxAPI.h"
 
-@interface PresentationViewController ()
+@interface PresentationViewController () <XBoxAPIDelegate>
 
 @end
 
@@ -25,11 +26,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    XBoxAPI *xboxApi = [[XBoxAPI alloc] init];
+    [xboxApi getUserInfo:@"mishanja"];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+-(void)setUserData:(NSString *)gamerTag {
+    UILabel *gametagLabel = (UILabel *)[self.view viewWithTag:1];
+    gametagLabel.text = gamerTag;
 }
 
 @end
