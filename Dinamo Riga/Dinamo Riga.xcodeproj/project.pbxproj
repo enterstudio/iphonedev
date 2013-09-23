@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F985E3417F0832B004EFFBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F985E3317F0832B004EFFBE /* Foundation.framework */; };
+		6F985E3617F0832B004EFFBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F985E3517F0832B004EFFBE /* CoreGraphics.framework */; };
+		6F985E3817F0832B004EFFBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F985E3717F0832B004EFFBE /* UIKit.framework */; };
+		6F985E3E17F0832B004EFFBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F985E3C17F0832B004EFFBE /* InfoPlist.strings */; };
+		6F985E4017F0832B004EFFBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E3F17F0832B004EFFBE /* main.m */; };
+		6F985E4417F0832B004EFFBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E4317F0832B004EFFBE /* AppDelegate.m */; };
+		6F985E5017F0832B004EFFBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F985E4E17F0832B004EFFBE /* Main.storyboard */; };
+		6F985E5217F0832B004EFFBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F985E5117F0832B004EFFBE /* Images.xcassets */; };
+		6F985E5917F0832C004EFFBE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F985E5817F0832C004EFFBE /* XCTest.framework */; };
+		6F985E5A17F0832C004EFFBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F985E3317F0832B004EFFBE /* Foundation.framework */; };
+		6F985E5B17F0832C004EFFBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F985E3717F0832B004EFFBE /* UIKit.framework */; };
+		6F985E6317F0832C004EFFBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F985E6117F0832C004EFFBE /* InfoPlist.strings */; };
+		6F985E6517F0832C004EFFBE /* Dinamo_RigaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E6417F0832C004EFFBE /* Dinamo_RigaTests.m */; };
+		6F985E7117F08553004EFFBE /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E7017F08553004EFFBE /* NewsTableViewController.m */; };
+		6F985E8617F08788004EFFBE /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E7417F08788004EFFBE /* AFHTTPClient.m */; };
+		6F985E8717F08788004EFFBE /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E7617F08788004EFFBE /* AFHTTPRequestOperation.m */; };
+		6F985E8817F08788004EFFBE /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E7817F08788004EFFBE /* AFImageRequestOperation.m */; };
+		6F985E8917F08788004EFFBE /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E7A17F08788004EFFBE /* AFJSONRequestOperation.m */; };
+		6F985E8A17F08788004EFFBE /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E7C17F08788004EFFBE /* AFNetworkActivityIndicatorManager.m */; };
+		6F985E8B17F08788004EFFBE /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E7F17F08788004EFFBE /* AFPropertyListRequestOperation.m */; };
+		6F985E8C17F08788004EFFBE /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E8117F08788004EFFBE /* AFURLConnectionOperation.m */; };
+		6F985E8D17F08788004EFFBE /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E8317F08788004EFFBE /* AFXMLRequestOperation.m */; };
+		6F985E8E17F08788004EFFBE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E8517F08788004EFFBE /* UIImageView+AFNetworking.m */; };
+		6F985E9117F08D47004EFFBE /* NewsEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F985E9017F08D47004EFFBE /* NewsEntry.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F985E5C17F0832C004EFFBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F985E2817F0832B004EFFBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F985E2F17F0832B004EFFBE;
+			remoteInfo = "Dinamo Riga";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F985E3017F0832B004EFFBE /* Dinamo Riga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dinamo Riga.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F985E3317F0832B004EFFBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6F985E3517F0832B004EFFBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6F985E3717F0832B004EFFBE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6F985E3B17F0832B004EFFBE /* Dinamo Riga-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dinamo Riga-Info.plist"; sourceTree = "<group>"; };
+		6F985E3D17F0832B004EFFBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6F985E3F17F0832B004EFFBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6F985E4117F0832B004EFFBE /* Dinamo Riga-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dinamo Riga-Prefix.pch"; sourceTree = "<group>"; };
+		6F985E4217F0832B004EFFBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6F985E4317F0832B004EFFBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6F985E4F17F0832B004EFFBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F985E5117F0832B004EFFBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6F985E5717F0832C004EFFBE /* Dinamo RigaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dinamo RigaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F985E5817F0832C004EFFBE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6F985E6017F0832C004EFFBE /* Dinamo RigaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dinamo RigaTests-Info.plist"; sourceTree = "<group>"; };
+		6F985E6217F0832C004EFFBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6F985E6417F0832C004EFFBE /* Dinamo_RigaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dinamo_RigaTests.m; sourceTree = "<group>"; };
+		6F985E6F17F08553004EFFBE /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		6F985E7017F08553004EFFBE /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
+		6F985E7317F08788004EFFBE /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFHTTPClient.h; sourceTree = "<group>"; };
+		6F985E7417F08788004EFFBE /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFHTTPClient.m; sourceTree = "<group>"; };
+		6F985E7517F08788004EFFBE /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		6F985E7617F08788004EFFBE /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		6F985E7717F08788004EFFBE /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFImageRequestOperation.h; sourceTree = "<group>"; };
+		6F985E7817F08788004EFFBE /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFImageRequestOperation.m; sourceTree = "<group>"; };
+		6F985E7917F08788004EFFBE /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		6F985E7A17F08788004EFFBE /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		6F985E7B17F08788004EFFBE /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		6F985E7C17F08788004EFFBE /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		6F985E7D17F08788004EFFBE /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		6F985E7E17F08788004EFFBE /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		6F985E7F17F08788004EFFBE /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		6F985E8017F08788004EFFBE /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		6F985E8117F08788004EFFBE /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		6F985E8217F08788004EFFBE /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		6F985E8317F08788004EFFBE /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		6F985E8417F08788004EFFBE /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		6F985E8517F08788004EFFBE /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		6F985E8F17F08D47004EFFBE /* NewsEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsEntry.h; sourceTree = "<group>"; };
+		6F985E9017F08D47004EFFBE /* NewsEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsEntry.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F985E2D17F0832B004EFFBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F985E3617F0832B004EFFBE /* CoreGraphics.framework in Frameworks */,
+				6F985E3817F0832B004EFFBE /* UIKit.framework in Frameworks */,
+				6F985E3417F0832B004EFFBE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F985E5417F0832C004EFFBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F985E5917F0832C004EFFBE /* XCTest.framework in Frameworks */,
+				6F985E5B17F0832C004EFFBE /* UIKit.framework in Frameworks */,
+				6F985E5A17F0832C004EFFBE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F985E2717F0832B004EFFBE = {
+			isa = PBXGroup;
+			children = (
+				6F985E3917F0832B004EFFBE /* Dinamo Riga */,
+				6F985E5E17F0832C004EFFBE /* Dinamo RigaTests */,
+				6F985E3217F0832B004EFFBE /* Frameworks */,
+				6F985E3117F0832B004EFFBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F985E3117F0832B004EFFBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F985E3017F0832B004EFFBE /* Dinamo Riga.app */,
+				6F985E5717F0832C004EFFBE /* Dinamo RigaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F985E3217F0832B004EFFBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F985E3317F0832B004EFFBE /* Foundation.framework */,
+				6F985E3517F0832B004EFFBE /* CoreGraphics.framework */,
+				6F985E3717F0832B004EFFBE /* UIKit.framework */,
+				6F985E5817F0832C004EFFBE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F985E3917F0832B004EFFBE /* Dinamo Riga */ = {
+			isa = PBXGroup;
+			children = (
+				6F985E7217F086AB004EFFBE /* AFNetworking */,
+				6F985E6E17F0852C004EFFBE /* Classes */,
+				6F985E4217F0832B004EFFBE /* AppDelegate.h */,
+				6F985E4317F0832B004EFFBE /* AppDelegate.m */,
+				6F985E4E17F0832B004EFFBE /* Main.storyboard */,
+				6F985E5117F0832B004EFFBE /* Images.xcassets */,
+				6F985E3A17F0832B004EFFBE /* Supporting Files */,
+			);
+			path = "Dinamo Riga";
+			sourceTree = "<group>";
+		};
+		6F985E3A17F0832B004EFFBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F985E3B17F0832B004EFFBE /* Dinamo Riga-Info.plist */,
+				6F985E3C17F0832B004EFFBE /* InfoPlist.strings */,
+				6F985E3F17F0832B004EFFBE /* main.m */,
+				6F985E4117F0832B004EFFBE /* Dinamo Riga-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F985E5E17F0832C004EFFBE /* Dinamo RigaTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F985E6417F0832C004EFFBE /* Dinamo_RigaTests.m */,
+				6F985E5F17F0832C004EFFBE /* Supporting Files */,
+			);
+			path = "Dinamo RigaTests";
+			sourceTree = "<group>";
+		};
+		6F985E5F17F0832C004EFFBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F985E6017F0832C004EFFBE /* Dinamo RigaTests-Info.plist */,
+				6F985E6117F0832C004EFFBE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F985E6E17F0852C004EFFBE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6F985E6F17F08553004EFFBE /* NewsTableViewController.h */,
+				6F985E7017F08553004EFFBE /* NewsTableViewController.m */,
+				6F985E8F17F08D47004EFFBE /* NewsEntry.h */,
+				6F985E9017F08D47004EFFBE /* NewsEntry.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		6F985E7217F086AB004EFFBE /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				6F985E7317F08788004EFFBE /* AFHTTPClient.h */,
+				6F985E7417F08788004EFFBE /* AFHTTPClient.m */,
+				6F985E7517F08788004EFFBE /* AFHTTPRequestOperation.h */,
+				6F985E7617F08788004EFFBE /* AFHTTPRequestOperation.m */,
+				6F985E7717F08788004EFFBE /* AFImageRequestOperation.h */,
+				6F985E7817F08788004EFFBE /* AFImageRequestOperation.m */,
+				6F985E7917F08788004EFFBE /* AFJSONRequestOperation.h */,
+				6F985E7A17F08788004EFFBE /* AFJSONRequestOperation.m */,
+				6F985E7B17F08788004EFFBE /* AFNetworkActivityIndicatorManager.h */,
+				6F985E7C17F08788004EFFBE /* AFNetworkActivityIndicatorManager.m */,
+				6F985E7D17F08788004EFFBE /* AFNetworking.h */,
+				6F985E7E17F08788004EFFBE /* AFPropertyListRequestOperation.h */,
+				6F985E7F17F08788004EFFBE /* AFPropertyListRequestOperation.m */,
+				6F985E8017F08788004EFFBE /* AFURLConnectionOperation.h */,
+				6F985E8117F08788004EFFBE /* AFURLConnectionOperation.m */,
+				6F985E8217F08788004EFFBE /* AFXMLRequestOperation.h */,
+				6F985E8317F08788004EFFBE /* AFXMLRequestOperation.m */,
+				6F985E8417F08788004EFFBE /* UIImageView+AFNetworking.h */,
+				6F985E8517F08788004EFFBE /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F985E2F17F0832B004EFFBE /* Dinamo Riga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F985E6817F0832C004EFFBE /* Build configuration list for PBXNativeTarget "Dinamo Riga" */;
+			buildPhases = (
+				6F985E2C17F0832B004EFFBE /* Sources */,
+				6F985E2D17F0832B004EFFBE /* Frameworks */,
+				6F985E2E17F0832B004EFFBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dinamo Riga";
+			productName = "Dinamo Riga";
+			productReference = 6F985E3017F0832B004EFFBE /* Dinamo Riga.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F985E5617F0832C004EFFBE /* Dinamo RigaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F985E6B17F0832C004EFFBE /* Build configuration list for PBXNativeTarget "Dinamo RigaTests" */;
+			buildPhases = (
+				6F985E5317F0832C004EFFBE /* Sources */,
+				6F985E5417F0832C004EFFBE /* Frameworks */,
+				6F985E5517F0832C004EFFBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F985E5D17F0832C004EFFBE /* PBXTargetDependency */,
+			);
+			name = "Dinamo RigaTests";
+			productName = "Dinamo RigaTests";
+			productReference = 6F985E5717F0832C004EFFBE /* Dinamo RigaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F985E2817F0832B004EFFBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = mike.tihonchik;
+				TargetAttributes = {
+					6F985E5617F0832C004EFFBE = {
+						TestTargetID = 6F985E2F17F0832B004EFFBE;
+					};
+				};
+			};
+			buildConfigurationList = 6F985E2B17F0832B004EFFBE /* Build configuration list for PBXProject "Dinamo Riga" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F985E2717F0832B004EFFBE;
+			productRefGroup = 6F985E3117F0832B004EFFBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F985E2F17F0832B004EFFBE /* Dinamo Riga */,
+				6F985E5617F0832C004EFFBE /* Dinamo RigaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F985E2E17F0832B004EFFBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F985E5217F0832B004EFFBE /* Images.xcassets in Resources */,
+				6F985E3E17F0832B004EFFBE /* InfoPlist.strings in Resources */,
+				6F985E5017F0832B004EFFBE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F985E5517F0832C004EFFBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F985E6317F0832C004EFFBE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F985E2C17F0832B004EFFBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F985E8817F08788004EFFBE /* AFImageRequestOperation.m in Sources */,
+				6F985E7117F08553004EFFBE /* NewsTableViewController.m in Sources */,
+				6F985E8B17F08788004EFFBE /* AFPropertyListRequestOperation.m in Sources */,
+				6F985E4417F0832B004EFFBE /* AppDelegate.m in Sources */,
+				6F985E8C17F08788004EFFBE /* AFURLConnectionOperation.m in Sources */,
+				6F985E8D17F08788004EFFBE /* AFXMLRequestOperation.m in Sources */,
+				6F985E8917F08788004EFFBE /* AFJSONRequestOperation.m in Sources */,
+				6F985E8E17F08788004EFFBE /* UIImageView+AFNetworking.m in Sources */,
+				6F985E8A17F08788004EFFBE /* AFNetworkActivityIndicatorManager.m in Sources */,
+				6F985E8717F08788004EFFBE /* AFHTTPRequestOperation.m in Sources */,
+				6F985E4017F0832B004EFFBE /* main.m in Sources */,
+				6F985E9117F08D47004EFFBE /* NewsEntry.m in Sources */,
+				6F985E8617F08788004EFFBE /* AFHTTPClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F985E5317F0832C004EFFBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F985E6517F0832C004EFFBE /* Dinamo_RigaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F985E5D17F0832C004EFFBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F985E2F17F0832B004EFFBE /* Dinamo Riga */;
+			targetProxy = 6F985E5C17F0832C004EFFBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F985E3C17F0832B004EFFBE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F985E3D17F0832B004EFFBE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6F985E4E17F0832B004EFFBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F985E4F17F0832B004EFFBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F985E6117F0832C004EFFBE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F985E6217F0832C004EFFBE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F985E6617F0832C004EFFBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6F985E6717F0832C004EFFBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F985E6917F0832C004EFFBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dinamo Riga/Dinamo Riga-Prefix.pch";
+				INFOPLIST_FILE = "Dinamo Riga/Dinamo Riga-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6F985E6A17F0832C004EFFBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dinamo Riga/Dinamo Riga-Prefix.pch";
+				INFOPLIST_FILE = "Dinamo Riga/Dinamo Riga-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6F985E6C17F0832C004EFFBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dinamo Riga.app/Dinamo Riga";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dinamo Riga/Dinamo Riga-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dinamo RigaTests/Dinamo RigaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6F985E6D17F0832C004EFFBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dinamo Riga.app/Dinamo Riga";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dinamo Riga/Dinamo Riga-Prefix.pch";
+				INFOPLIST_FILE = "Dinamo RigaTests/Dinamo RigaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F985E2B17F0832B004EFFBE /* Build configuration list for PBXProject "Dinamo Riga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F985E6617F0832C004EFFBE /* Debug */,
+				6F985E6717F0832C004EFFBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F985E6817F0832C004EFFBE /* Build configuration list for PBXNativeTarget "Dinamo Riga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F985E6917F0832C004EFFBE /* Debug */,
+				6F985E6A17F0832C004EFFBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F985E6B17F0832C004EFFBE /* Build configuration list for PBXNativeTarget "Dinamo RigaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F985E6C17F0832C004EFFBE /* Debug */,
+				6F985E6D17F0832C004EFFBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F985E2817F0832B004EFFBE /* Project object */;
+}
