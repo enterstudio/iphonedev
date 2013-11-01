@@ -132,6 +132,7 @@
 				6F4A6A9B1822C4A000E9CAE3 /* Images.xcassets */,
 				6F4A6AB81822C8ED00E9CAE3 /* images */,
 				6F4A6A851822C4A000E9CAE3 /* Supporting Files */,
+				6FAF30421824419A00BA411A /* utils */,
 			);
 			path = GameWithNoName;
 			sourceTree = "<group>";
@@ -172,6 +173,13 @@
 				6F0D9E8E18240B45006B7588 /* nonamegame.h */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		6FAF30421824419A00BA411A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
