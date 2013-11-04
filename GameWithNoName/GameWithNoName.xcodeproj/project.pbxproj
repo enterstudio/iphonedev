@@ -24,6 +24,7 @@
 		6F4A6AA51822C4A000E9CAE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4A6A801822C4A000E9CAE3 /* UIKit.framework */; };
 		6F4A6AAD1822C4A000E9CAE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F4A6AAB1822C4A000E9CAE3 /* InfoPlist.strings */; };
 		6F4A6AAF1822C4A000E9CAE3 /* GameWithNoNameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4A6AAE1822C4A000E9CAE3 /* GameWithNoNameTests.m */; };
+		6F529F90182843E100958F47 /* Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F529F8F182843E100958F47 /* Geometry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		6F4A6AAA1822C4A000E9CAE3 /* GameWithNoNameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameWithNoNameTests-Info.plist"; sourceTree = "<group>"; };
 		6F4A6AAC1822C4A000E9CAE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6F4A6AAE1822C4A000E9CAE3 /* GameWithNoNameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameWithNoNameTests.m; sourceTree = "<group>"; };
+		6F529F8E182843E100958F47 /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		6F529F8F182843E100958F47 /* Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Geometry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 		6FAF30421824419A00BA411A /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				6F529F8E182843E100958F47 /* Geometry.h */,
+				6F529F8F182843E100958F47 /* Geometry.m */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F529F90182843E100958F47 /* Geometry.m in Sources */,
 				6F4A6A981822C4A000E9CAE3 /* MyScene.m in Sources */,
 				6F4A6A951822C4A000E9CAE3 /* ViewController.m in Sources */,
 				6F4A6A8F1822C4A000E9CAE3 /* AppDelegate.m in Sources */,
