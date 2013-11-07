@@ -25,6 +25,7 @@
 		6F4A6AAD1822C4A000E9CAE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F4A6AAB1822C4A000E9CAE3 /* InfoPlist.strings */; };
 		6F4A6AAF1822C4A000E9CAE3 /* GameWithNoNameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4A6AAE1822C4A000E9CAE3 /* GameWithNoNameTests.m */; };
 		6F529F90182843E100958F47 /* Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F529F8F182843E100958F47 /* Geometry.m */; };
+		6FF0412A182C246E00DCF71B /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF04129182C246E00DCF71B /* Globals.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		6F4A6AAE1822C4A000E9CAE3 /* GameWithNoNameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameWithNoNameTests.m; sourceTree = "<group>"; };
 		6F529F8E182843E100958F47 /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
 		6F529F8F182843E100958F47 /* Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Geometry.m; sourceTree = "<group>"; };
+		6FF04128182C246E00DCF71B /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		6FF04129182C246E00DCF71B /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Globals.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,7 @@
 				6F4A6A961822C4A000E9CAE3 /* MyScene.h */,
 				6F4A6A971822C4A000E9CAE3 /* MyScene.m */,
 				6F4A6A9B1822C4A000E9CAE3 /* Images.xcassets */,
+				6FF04127182C245200DCF71B /* globals */,
 				6F4A6AB81822C8ED00E9CAE3 /* images */,
 				6F4A6A851822C4A000E9CAE3 /* Supporting Files */,
 				6FAF30421824419A00BA411A /* utils */,
@@ -185,6 +189,15 @@
 				6F529F8F182843E100958F47 /* Geometry.m */,
 			);
 			name = utils;
+			sourceTree = "<group>";
+		};
+		6FF04127182C245200DCF71B /* globals */ = {
+			isa = PBXGroup;
+			children = (
+				6FF04128182C246E00DCF71B /* Globals.h */,
+				6FF04129182C246E00DCF71B /* Globals.m */,
+			);
+			name = globals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +302,7 @@
 				6F4A6A981822C4A000E9CAE3 /* MyScene.m in Sources */,
 				6F4A6A951822C4A000E9CAE3 /* ViewController.m in Sources */,
 				6F4A6A8F1822C4A000E9CAE3 /* AppDelegate.m in Sources */,
+				6FF0412A182C246E00DCF71B /* Globals.m in Sources */,
 				6F4A6A8B1822C4A000E9CAE3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

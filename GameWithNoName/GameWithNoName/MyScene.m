@@ -9,6 +9,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "MyScene.h"
 #import "Geometry.h"
+#import "Globals.h"
 
 @implementation MyScene {
     
@@ -98,27 +99,33 @@
     CGPoint location = [[touches anyObject] locationInNode:self];
     CGSize screenSize = self.frame.size;
     float playerVelocity = screenSize.width / 5.0;
-    CGPoint moveDifference = CGPointMake(location.x - _player.position.x, location.y - _player.position.y);
-    float distanceToMove = sqrtf(moveDifference.x * moveDifference.x + moveDifference.y * moveDifference.y);
+//    CGPoint moveDifference = CGPointMake(location.x - _player.position.x, location.y - _player.position.y);
+//    float distanceToMove = sqrtf(moveDifference.x * moveDifference.x + moveDifference.y * moveDifference.y);
+    float distanceToMove = 50.0f;
     float moveDuration = distanceToMove / playerVelocity;
 
     if ([_player actionForKey:@"characterMoving"]) {
         [_player removeActionForKey:@"characterMoving"];
     }
 
-/*    if (moveDifference.x < 0) {
-        if (![_player actionForKey:@"movingLeft"]) {
-            [self movingCharacter:@"left"];
-        }
+    NSString *movement = [self determinePointPosition:location.x currentY:location.y];
+    [self movingCharacter:movement];
+    float newPositionX, newPositionY;
+    if( [@"left" isEqualToString:movement]) {
+        newPositionX = _player.position.x - 30;
+        newPositionY = _player.position.y;
+    } else if( [@"right" isEqualToString:movement]) {
+        newPositionX = _player.position.x + 30;
+        newPositionY = _player.position.y;
+    } else if( [@"up" isEqualToString:movement]) {
+        newPositionX = _player.position.x;
+        newPositionY = _player.position.y + 30;
     } else {
-        if (![_player actionForKey:@"movingRight"]) {
-            [self movingCharacter:@"right"];
-        }
+        newPositionX = _player.position.x;
+        newPositionY = _player.position.y - 30;
     }
-*/
-    [self movingCharacter:[self determinePointPosition:location.x currentY:location.y]];
     
-    CGPoint newLocation = CGPointMake(location.x, _player.position.y);
+    CGPoint newLocation = CGPointMake(newPositionX, newPositionY);
     SKAction *moveAction = [SKAction moveTo:newLocation duration:moveDuration];
 //    SKAction *moveAction = [SKAction moveTo:location duration:moveDuration];
     SKAction *doneAction = [SKAction runBlock:(dispatch_block_t)^() {
@@ -142,21 +149,24 @@
  */
 -(NSString *)determinePointPosition:(float) currentPositionX currentY:(float) currentPositionY {
     float endpointX, endpointY;
-    float startX = 240;
+    float startX = NON_IPHONE_5/2;
+    if(IS_IPHONE_5) {
+        startX = IPHONE_5/2;
+    }
     float startY = 160;
     int quadrant;
     NSString *direction;
     
-    if(currentPositionX < startX && currentPositionY > currentPositionY) {
+    if(currentPositionX < startX && currentPositionY > startY) {
         endpointX = 0;
         endpointY = 320;
         quadrant = 1;
-    } else if(currentPositionX > startX && currentPositionY > currentPositionY) {
-        endpointX = 320;
+    } else if(currentPositionX > startX && currentPositionY > startY) {
+        endpointX = IPHONE_5;
         endpointY = 320;
         quadrant = 2;
-    } else if(currentPositionX > startX && currentPositionY < currentPositionY) {
-        endpointX = 320;
+    } else if(currentPositionX > startX && currentPositionY < startY) {
+        endpointX = IPHONE_5;
         endpointY = 0;
         quadrant = 3;
     } else {
@@ -166,7 +176,7 @@
     }
     
     float result = (endpointX - startX) * (currentPositionY - startY) - (endpointY - startY) * (currentPositionX - startX);
-    
+
     if(quadrant == 1) {
         if(result > 0) {
             direction = @"left";
