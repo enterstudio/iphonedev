@@ -108,7 +108,7 @@
         [_player removeActionForKey:@"characterMoving"];
     }
 
-    NSString *movement = [self determinePointPosition:location.x currentY:location.y];
+    NSString *movement = [self determinePointPosition:location.x touchY:location.y];
     [self movingCharacter:movement];
     float newPositionX, newPositionY;
     if( [@"left" isEqualToString:movement]) {
@@ -147,25 +147,27 @@
  * line is (x1,y1) to (x2,y2), point is (x3,y3)
  * return (x2 - x1) * (y3 - y1) - (y2 - y1) * (x3 - x1);
  */
--(NSString *)determinePointPosition:(float) currentPositionX currentY:(float) currentPositionY {
+-(NSString *)determinePointPosition:(float) touchX touchY:(float) touchY {
     float endpointX, endpointY;
-    float startX = NON_IPHONE_5/2;
-    if(IS_IPHONE_5) {
-        startX = IPHONE_5/2;
-    }
-    float startY = 160;
+//    float startX = NON_IPHONE_5/2;
+//    if(IS_IPHONE_5) {
+//        startX = IPHONE_5/2;
+//    }
+//    float startY = 160;
+    float playerPositionX = _player.position.x;
+    float playerPositionY = _player.position.y;
     int quadrant;
     NSString *direction;
     
-    if(currentPositionX < startX && currentPositionY > startY) {
+    if(touchX < playerPositionX && touchY > playerPositionY) {
         endpointX = 0;
         endpointY = 320;
         quadrant = 1;
-    } else if(currentPositionX > startX && currentPositionY > startY) {
+    } else if(touchX > playerPositionX && touchY > playerPositionY) {
         endpointX = IPHONE_5;
         endpointY = 320;
         quadrant = 2;
-    } else if(currentPositionX > startX && currentPositionY < startY) {
+    } else if(touchX > playerPositionX && touchY < playerPositionY) {
         endpointX = IPHONE_5;
         endpointY = 0;
         quadrant = 3;
@@ -175,7 +177,7 @@
         quadrant = 4;
     }
     
-    float result = (endpointX - startX) * (currentPositionY - startY) - (endpointY - startY) * (currentPositionX - startX);
+    float result = (endpointX - playerPositionX) * (touchY - playerPositionY) - (endpointY - playerPositionY) * (touchX - playerPositionX);
 
     if(quadrant == 1) {
         if(result > 0) {
