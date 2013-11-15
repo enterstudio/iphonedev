@@ -10,6 +10,11 @@
 		6F0D9E8F18240B45006B7588 /* nonamegame.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 6F0D9E8D18240B45006B7588 /* nonamegame.atlasc */; };
 		6F22698A18367E4A00F11724 /* dPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F22698818367E4A00F11724 /* dPad.png */; };
 		6F22698B18367E4A00F11724 /* dPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F22698918367E4A00F11724 /* dPad@2x.png */; };
+		6F22698E18368E2300F11724 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F22698D18368E2300F11724 /* StartViewController.m */; };
+		6F2269911836BA0000F11724 /* gwnn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F22698F1836BA0000F11724 /* gwnn.png */; };
+		6F2269921836BA0000F11724 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F2269901836BA0000F11724 /* start.png */; };
+		6F2269951836C05100F11724 /* classic.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F2269931836C05100F11724 /* classic.png */; };
+		6F2269961836C05100F11724 /* touch.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F2269941836C05100F11724 /* touch.png */; };
 		6F4A6A7D1822C49F00E9CAE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4A6A7C1822C49F00E9CAE3 /* Foundation.framework */; };
 		6F4A6A7F1822C4A000E9CAE3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4A6A7E1822C4A000E9CAE3 /* CoreGraphics.framework */; };
 		6F4A6A811822C4A000E9CAE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4A6A801822C4A000E9CAE3 /* UIKit.framework */; };
@@ -45,6 +50,12 @@
 		6F0D9E8E18240B45006B7588 /* nonamegame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nonamegame.h; path = spritekitimages/nonamegame.h; sourceTree = "<group>"; };
 		6F22698818367E4A00F11724 /* dPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dPad.png; path = images/dPad.png; sourceTree = "<group>"; };
 		6F22698918367E4A00F11724 /* dPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad@2x.png"; path = "images/dPad@2x.png"; sourceTree = "<group>"; };
+		6F22698C18368E2300F11724 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		6F22698D18368E2300F11724 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		6F22698F1836BA0000F11724 /* gwnn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gwnn.png; path = images/gwnn.png; sourceTree = "<group>"; };
+		6F2269901836BA0000F11724 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start.png; path = images/start.png; sourceTree = "<group>"; };
+		6F2269931836C05100F11724 /* classic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = classic.png; path = images/classic.png; sourceTree = "<group>"; };
+		6F2269941836C05100F11724 /* touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = touch.png; path = images/touch.png; sourceTree = "<group>"; };
 		6F4A6A791822C49F00E9CAE3 /* GameWithNoName.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameWithNoName.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F4A6A7C1822C49F00E9CAE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6F4A6A7E1822C4A000E9CAE3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,6 +150,8 @@
 				6F4A6A941822C4A000E9CAE3 /* ViewController.m */,
 				6F4A6A961822C4A000E9CAE3 /* MyScene.h */,
 				6F4A6A971822C4A000E9CAE3 /* MyScene.m */,
+				6F22698C18368E2300F11724 /* StartViewController.h */,
+				6F22698D18368E2300F11724 /* StartViewController.m */,
 				6F4A6A9B1822C4A000E9CAE3 /* Images.xcassets */,
 				6FF04127182C245200DCF71B /* globals */,
 				6F4A6AB81822C8ED00E9CAE3 /* images */,
@@ -180,6 +193,10 @@
 		6F4A6AB81822C8ED00E9CAE3 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6F2269931836C05100F11724 /* classic.png */,
+				6F2269941836C05100F11724 /* touch.png */,
+				6F22698F1836BA0000F11724 /* gwnn.png */,
+				6F2269901836BA0000F11724 /* start.png */,
 				6F22698818367E4A00F11724 /* dPad.png */,
 				6F22698918367E4A00F11724 /* dPad@2x.png */,
 				6F0D9E8D18240B45006B7588 /* nonamegame.atlasc */,
@@ -283,9 +300,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F4A6A891822C4A000E9CAE3 /* InfoPlist.strings in Resources */,
+				6F2269911836BA0000F11724 /* gwnn.png in Resources */,
+				6F2269921836BA0000F11724 /* start.png in Resources */,
+				6F2269961836C05100F11724 /* touch.png in Resources */,
 				6F22698B18367E4A00F11724 /* dPad@2x.png in Resources */,
 				6F22698A18367E4A00F11724 /* dPad.png in Resources */,
 				6F4A6A9C1822C4A000E9CAE3 /* Images.xcassets in Resources */,
+				6F2269951836C05100F11724 /* classic.png in Resources */,
 				6F4A6A921822C4A000E9CAE3 /* Main.storyboard in Resources */,
 				6F0D9E8F18240B45006B7588 /* nonamegame.atlasc in Resources */,
 			);
@@ -309,6 +330,7 @@
 				6F529F90182843E100958F47 /* Geometry.m in Sources */,
 				6F4A6A981822C4A000E9CAE3 /* MyScene.m in Sources */,
 				6F4A6A951822C4A000E9CAE3 /* ViewController.m in Sources */,
+				6F22698E18368E2300F11724 /* StartViewController.m in Sources */,
 				6F4A6A8F1822C4A000E9CAE3 /* AppDelegate.m in Sources */,
 				6FF0412A182C246E00DCF71B /* Globals.m in Sources */,
 				6F4A6A8B1822C4A000E9CAE3 /* main.m in Sources */,
