@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6F0D9E8F18240B45006B7588 /* nonamegame.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 6F0D9E8D18240B45006B7588 /* nonamegame.atlasc */; };
+		6F22698A18367E4A00F11724 /* dPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F22698818367E4A00F11724 /* dPad.png */; };
+		6F22698B18367E4A00F11724 /* dPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F22698918367E4A00F11724 /* dPad@2x.png */; };
 		6F4A6A7D1822C49F00E9CAE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4A6A7C1822C49F00E9CAE3 /* Foundation.framework */; };
 		6F4A6A7F1822C4A000E9CAE3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4A6A7E1822C4A000E9CAE3 /* CoreGraphics.framework */; };
 		6F4A6A811822C4A000E9CAE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4A6A801822C4A000E9CAE3 /* UIKit.framework */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		6F0D9E8D18240B45006B7588 /* nonamegame.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = nonamegame.atlasc; path = spritekitimages/nonamegame.atlasc; sourceTree = "<group>"; };
 		6F0D9E8E18240B45006B7588 /* nonamegame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nonamegame.h; path = spritekitimages/nonamegame.h; sourceTree = "<group>"; };
+		6F22698818367E4A00F11724 /* dPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dPad.png; path = images/dPad.png; sourceTree = "<group>"; };
+		6F22698918367E4A00F11724 /* dPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad@2x.png"; path = "images/dPad@2x.png"; sourceTree = "<group>"; };
 		6F4A6A791822C49F00E9CAE3 /* GameWithNoName.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameWithNoName.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F4A6A7C1822C49F00E9CAE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6F4A6A7E1822C4A000E9CAE3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,6 +180,8 @@
 		6F4A6AB81822C8ED00E9CAE3 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6F22698818367E4A00F11724 /* dPad.png */,
+				6F22698918367E4A00F11724 /* dPad@2x.png */,
 				6F0D9E8D18240B45006B7588 /* nonamegame.atlasc */,
 				6F0D9E8E18240B45006B7588 /* nonamegame.h */,
 			);
@@ -277,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F4A6A891822C4A000E9CAE3 /* InfoPlist.strings in Resources */,
+				6F22698B18367E4A00F11724 /* dPad@2x.png in Resources */,
+				6F22698A18367E4A00F11724 /* dPad.png in Resources */,
 				6F4A6A9C1822C4A000E9CAE3 /* Images.xcassets in Resources */,
 				6F4A6A921822C4A000E9CAE3 /* Main.storyboard in Resources */,
 				6F0D9E8F18240B45006B7588 /* nonamegame.atlasc in Resources */,

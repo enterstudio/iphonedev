@@ -14,6 +14,7 @@
 @implementation MyScene {
     
     SKSpriteNode *_player;
+    SKSpriteNode *_dPadController;
     NSArray *_movementFramesLeft;
     NSArray *_movementFramesRight;
     NSArray *_movementFramesUp;
@@ -60,12 +61,29 @@
         _player = [SKSpriteNode spriteNodeWithTexture:temp];
         _player.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
         [self addChild:_player];
+        
+        UILongPressGestureRecognizer *longGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
+        [longGesture setNumberOfTouchesRequired:1.0];
+        [longGesture setMinimumPressDuration:1.0];
+        [self.scene.view addGestureRecognizer:longGesture];
+        
+        /* Setting up dPad */
+        CGSize newSize = CGSizeMake(80,80);
+        UIGraphicsBeginImageContext(newSize);
+        UIImage *image = [UIImage imageNamed:@"dPad.png"];
+        [image drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
+        UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        _dPadController = [SKSpriteNode spriteNodeWithTexture:[SKTexture textureWithImage:newImage]];
+        _dPadController.position = CGPointMake(60, 60   );
+        _dPadController.alpha = 0.5f;
+        [self addChild:_dPadController];
     }
     return self;
 }
 
--(void)update:(CFTimeInterval)currentTime {
-
+-(void)handleLongPress:(UILongPressGestureRecognizer*)recognizer{
+    NSLog(@"double oo");
 }
 
 -(void)movingCharacter:(NSString *)move {
