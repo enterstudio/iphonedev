@@ -25,6 +25,7 @@
 		6FA9E3FC1875EA0C00EC312A /* PresentationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FA9E3FA1875EA0C00EC312A /* PresentationViewController.xib */; };
 		6FA9E4001875EB4100EC312A /* SlideOutMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA9E3FE1875EB4100EC312A /* SlideOutMenuController.m */; };
 		6FA9E4011875EB4100EC312A /* SlideOutMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FA9E3FF1875EB4100EC312A /* SlideOutMenuController.xib */; };
+		6FE9CB5B187B0A00000C8204 /* NavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE9CB5A187B0A00000C8204 /* NavigationItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		6FA9E3FD1875EB4100EC312A /* SlideOutMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideOutMenuController.h; sourceTree = "<group>"; };
 		6FA9E3FE1875EB4100EC312A /* SlideOutMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideOutMenuController.m; sourceTree = "<group>"; };
 		6FA9E3FF1875EB4100EC312A /* SlideOutMenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlideOutMenuController.xib; sourceTree = "<group>"; };
+		6FE9CB59187B0A00000C8204 /* NavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationItem.h; sourceTree = "<group>"; };
+		6FE9CB5A187B0A00000C8204 /* NavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,7 @@
 		6FA9E3C21875E84800EC312A /* bashorgru */ = {
 			isa = PBXGroup;
 			children = (
+				6FE9CB58187B09E2000C8204 /* customelements */,
 				6FA9E3F71875E92400EC312A /* views */,
 				6FA9E3F61875E91700EC312A /* classes */,
 				6FA9E3CB1875E84800EC312A /* AppDelegate.h */,
@@ -182,6 +186,15 @@
 				6FA9E3F31875E8C800EC312A /* MainViewController.xib */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		6FE9CB58187B09E2000C8204 /* customelements */ = {
+			isa = PBXGroup;
+			children = (
+				6FE9CB59187B0A00000C8204 /* NavigationItem.h */,
+				6FE9CB5A187B0A00000C8204 /* NavigationItem.m */,
+			);
+			name = customelements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +300,7 @@
 				6FA9E3F41875E8C800EC312A /* MainViewController.m in Sources */,
 				6FA9E3FB1875EA0C00EC312A /* PresentationViewController.m in Sources */,
 				6FA9E4001875EB4100EC312A /* SlideOutMenuController.m in Sources */,
+				6FE9CB5B187B0A00000C8204 /* NavigationItem.m in Sources */,
 				6FA9E3C91875E84800EC312A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +502,7 @@
 				6FA9E3ED1875E84900EC312A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FA9E3EE1875E84900EC312A /* Build configuration list for PBXNativeTarget "bashorgruTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +511,7 @@
 				6FA9E3F01875E84900EC312A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

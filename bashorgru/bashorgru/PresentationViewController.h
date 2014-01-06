@@ -19,7 +19,7 @@
 
 @end
 
-@interface PresentationViewController : UIViewController <SlideOutMenuControllerDelegate>
+@interface PresentationViewController : UIViewController <SlideOutMenuControllerDelegate, NSXMLParserDelegate>
 
 @property (nonatomic, assign) id<PresentationViewControllerDelegate> delegate;
 @property (nonatomic, weak) IBOutlet UIButton *leftButton;
