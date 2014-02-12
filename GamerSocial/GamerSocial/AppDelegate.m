@@ -2,25 +2,20 @@
 //  AppDelegate.m
 //  GamerSocial
 //
-//  Created by mike.tihonchik on 9/9/13.
-//  Copyright (c) 2013 mike.tihonchik. All rights reserved.
+//  Created by мишаня on 9/10/13.
+//  Copyright (c) 2013 mike tihonchik. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "SlideNavigationController.h"
 
 @implementation AppDelegate
-@synthesize slideMenu=_slideMenu;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    UIStoryboard*  sb = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    _slideMenu = [sb instantiateViewControllerWithIdentifier:@"SlideMenu"];
-    [SlideNavigationController sharedInstance].leftMenu = _slideMenu;
-    [SlideNavigationController sharedInstance].enableSwipeGesture = YES;
+    // Override point for customization after application launch.
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

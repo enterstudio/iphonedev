@@ -7,182 +7,116 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6FEBE32217DE489200271345 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEBE32117DE489200271345 /* UIKit.framework */; };
-		6FEBE32417DE489200271345 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEBE32317DE489200271345 /* Foundation.framework */; };
-		6FEBE32617DE489200271345 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEBE32517DE489200271345 /* CoreGraphics.framework */; };
-		6FEBE32C17DE489200271345 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FEBE32A17DE489200271345 /* InfoPlist.strings */; };
-		6FEBE32E17DE489200271345 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEBE32D17DE489200271345 /* main.m */; };
-		6FEBE33217DE489200271345 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEBE33117DE489200271345 /* AppDelegate.m */; };
-		6FEBE33417DE489200271345 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FEBE33317DE489200271345 /* Default.png */; };
-		6FEBE33617DE489200271345 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FEBE33517DE489200271345 /* Default@2x.png */; };
-		6FEBE33817DE489200271345 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FEBE33717DE489200271345 /* Default-568h@2x.png */; };
-		6FEBE33B17DE489200271345 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FEBE33917DE489200271345 /* MainStoryboard.storyboard */; };
-		6FEBE35217DE4DC700271345 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEBE35117DE4DC700271345 /* HomeViewController.m */; };
-		6FEBE35517DE4F2B00271345 /* SlideOutMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEBE35417DE4F2B00271345 /* SlideOutMenuViewController.m */; };
-		6FEBE35917DE525C00271345 /* GamerSocialGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEBE35817DE525C00271345 /* GamerSocialGlobals.m */; };
-		6FEBE35E17DE607A00271345 /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEBE35D17DE607900271345 /* SlideNavigationController.m */; };
-		6FEBE36217DE62C600271345 /* menu-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FEBE36017DE62C600271345 /* menu-button.png */; };
-		6FEBE36317DE62C600271345 /* menu-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FEBE36117DE62C600271345 /* menu-button@2x.png */; };
-		6FEBE36817DE688600271345 /* CustomMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEBE36717DE688600271345 /* CustomMenuCell.m */; };
+		2719DD7917DF7BCC00DEECAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2719DD7817DF7BCC00DEECAE /* UIKit.framework */; };
+		2719DD7B17DF7BCC00DEECAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2719DD7A17DF7BCC00DEECAE /* Foundation.framework */; };
+		2719DD7D17DF7BCC00DEECAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2719DD7C17DF7BCC00DEECAE /* CoreGraphics.framework */; };
+		2719DD8317DF7BCC00DEECAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2719DD8117DF7BCC00DEECAE /* InfoPlist.strings */; };
+		2719DD8517DF7BCC00DEECAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2719DD8417DF7BCC00DEECAE /* main.m */; };
+		2719DD8917DF7BCC00DEECAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2719DD8817DF7BCC00DEECAE /* AppDelegate.m */; };
+		2719DD8B17DF7BCC00DEECAE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2719DD8A17DF7BCC00DEECAE /* Default.png */; };
+		2719DD8D17DF7BCC00DEECAE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2719DD8C17DF7BCC00DEECAE /* Default@2x.png */; };
+		2719DD8F17DF7BCC00DEECAE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2719DD8E17DF7BCC00DEECAE /* Default-568h@2x.png */; };
+		2719DD9B17DF7BCC00DEECAE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2719DD9917DF7BCC00DEECAE /* MainStoryboard.storyboard */; };
+		2719DDA317DF7C8000DEECAE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2719DDA217DF7C8000DEECAE /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6FEBE31E17DE489200271345 /* GamerSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamerSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FEBE32117DE489200271345 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6FEBE32317DE489200271345 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		6FEBE32517DE489200271345 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6FEBE32917DE489200271345 /* GamerSocial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GamerSocial-Info.plist"; sourceTree = "<group>"; };
-		6FEBE32B17DE489200271345 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6FEBE32D17DE489200271345 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6FEBE32F17DE489200271345 /* GamerSocial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GamerSocial-Prefix.pch"; sourceTree = "<group>"; };
-		6FEBE33017DE489200271345 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6FEBE33117DE489200271345 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6FEBE33317DE489200271345 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		6FEBE33517DE489200271345 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		6FEBE33717DE489200271345 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		6FEBE33A17DE489200271345 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6FEBE35017DE4DC700271345 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		6FEBE35117DE4DC700271345 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		6FEBE35317DE4F2B00271345 /* SlideOutMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideOutMenuViewController.h; sourceTree = "<group>"; };
-		6FEBE35417DE4F2B00271345 /* SlideOutMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideOutMenuViewController.m; sourceTree = "<group>"; };
-		6FEBE35717DE525C00271345 /* GamerSocialGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamerSocialGlobals.h; sourceTree = "<group>"; };
-		6FEBE35817DE525C00271345 /* GamerSocialGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamerSocialGlobals.m; sourceTree = "<group>"; };
-		6FEBE35C17DE607900271345 /* SlideNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationController.h; sourceTree = "<group>"; };
-		6FEBE35D17DE607900271345 /* SlideNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationController.m; sourceTree = "<group>"; };
-		6FEBE36017DE62C600271345 /* menu-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-button.png"; path = "graphics/menu-button.png"; sourceTree = "<group>"; };
-		6FEBE36117DE62C600271345 /* menu-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-button@2x.png"; path = "graphics/menu-button@2x.png"; sourceTree = "<group>"; };
-		6FEBE36617DE688600271345 /* CustomMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMenuCell.h; sourceTree = "<group>"; };
-		6FEBE36717DE688600271345 /* CustomMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMenuCell.m; sourceTree = "<group>"; };
+		2719DD7517DF7BCC00DEECAE /* GamerSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamerSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2719DD7817DF7BCC00DEECAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2719DD7A17DF7BCC00DEECAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2719DD7C17DF7BCC00DEECAE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2719DD8017DF7BCC00DEECAE /* GamerSocial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GamerSocial-Info.plist"; sourceTree = "<group>"; };
+		2719DD8217DF7BCC00DEECAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2719DD8417DF7BCC00DEECAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2719DD8617DF7BCC00DEECAE /* GamerSocial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GamerSocial-Prefix.pch"; sourceTree = "<group>"; };
+		2719DD8717DF7BCC00DEECAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2719DD8817DF7BCC00DEECAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2719DD8A17DF7BCC00DEECAE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2719DD8C17DF7BCC00DEECAE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2719DD8E17DF7BCC00DEECAE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2719DD9A17DF7BCC00DEECAE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2719DDA117DF7C8000DEECAE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2719DDA217DF7C8000DEECAE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6FEBE31B17DE489200271345 /* Frameworks */ = {
+		2719DD7217DF7BCC00DEECAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FEBE32217DE489200271345 /* UIKit.framework in Frameworks */,
-				6FEBE32417DE489200271345 /* Foundation.framework in Frameworks */,
-				6FEBE32617DE489200271345 /* CoreGraphics.framework in Frameworks */,
+				2719DD7917DF7BCC00DEECAE /* UIKit.framework in Frameworks */,
+				2719DD7B17DF7BCC00DEECAE /* Foundation.framework in Frameworks */,
+				2719DD7D17DF7BCC00DEECAE /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6FEBE31517DE489200271345 = {
+		2719DD6C17DF7BCC00DEECAE = {
 			isa = PBXGroup;
 			children = (
-				6FEBE32717DE489200271345 /* GamerSocial */,
-				6FEBE32017DE489200271345 /* Frameworks */,
-				6FEBE31F17DE489200271345 /* Products */,
+				2719DD7E17DF7BCC00DEECAE /* GamerSocial */,
+				2719DD7717DF7BCC00DEECAE /* Frameworks */,
+				2719DD7617DF7BCC00DEECAE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6FEBE31F17DE489200271345 /* Products */ = {
+		2719DD7617DF7BCC00DEECAE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6FEBE31E17DE489200271345 /* GamerSocial.app */,
+				2719DD7517DF7BCC00DEECAE /* GamerSocial.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6FEBE32017DE489200271345 /* Frameworks */ = {
+		2719DD7717DF7BCC00DEECAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6FEBE32117DE489200271345 /* UIKit.framework */,
-				6FEBE32317DE489200271345 /* Foundation.framework */,
-				6FEBE32517DE489200271345 /* CoreGraphics.framework */,
+				2719DD7817DF7BCC00DEECAE /* UIKit.framework */,
+				2719DD7A17DF7BCC00DEECAE /* Foundation.framework */,
+				2719DD7C17DF7BCC00DEECAE /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6FEBE32717DE489200271345 /* GamerSocial */ = {
+		2719DD7E17DF7BCC00DEECAE /* GamerSocial */ = {
 			isa = PBXGroup;
 			children = (
-				6FEBE35617DE51A700271345 /* globals */,
-				6FEBE36417DE685C00271345 /* models */,
-				6FEBE34417DE4A1B00271345 /* SlideOutMenu */,
-				6FEBE32817DE489200271345 /* Supporting Files */,
-				6FEBE33917DE489200271345 /* MainStoryboard.storyboard */,
-				6FEBE33017DE489200271345 /* AppDelegate.h */,
-				6FEBE33117DE489200271345 /* AppDelegate.m */,
-				6FEBE35017DE4DC700271345 /* HomeViewController.h */,
-				6FEBE35117DE4DC700271345 /* HomeViewController.m */,
-				6FEBE35317DE4F2B00271345 /* SlideOutMenuViewController.h */,
-				6FEBE35417DE4F2B00271345 /* SlideOutMenuViewController.m */,
+				2719DD8717DF7BCC00DEECAE /* AppDelegate.h */,
+				2719DD8817DF7BCC00DEECAE /* AppDelegate.m */,
+				2719DDA117DF7C8000DEECAE /* MainViewController.h */,
+				2719DDA217DF7C8000DEECAE /* MainViewController.m */,
+				2719DD9917DF7BCC00DEECAE /* MainStoryboard.storyboard */,
+				2719DD7F17DF7BCC00DEECAE /* Supporting Files */,
 			);
 			path = GamerSocial;
 			sourceTree = "<group>";
 		};
-		6FEBE32817DE489200271345 /* Supporting Files */ = {
+		2719DD7F17DF7BCC00DEECAE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6FEBE35F17DE629100271345 /* graphics */,
-				6FEBE32917DE489200271345 /* GamerSocial-Info.plist */,
-				6FEBE32A17DE489200271345 /* InfoPlist.strings */,
-				6FEBE32D17DE489200271345 /* main.m */,
-				6FEBE32F17DE489200271345 /* GamerSocial-Prefix.pch */,
-				6FEBE33317DE489200271345 /* Default.png */,
-				6FEBE33517DE489200271345 /* Default@2x.png */,
-				6FEBE33717DE489200271345 /* Default-568h@2x.png */,
+				2719DD8017DF7BCC00DEECAE /* GamerSocial-Info.plist */,
+				2719DD8117DF7BCC00DEECAE /* InfoPlist.strings */,
+				2719DD8417DF7BCC00DEECAE /* main.m */,
+				2719DD8617DF7BCC00DEECAE /* GamerSocial-Prefix.pch */,
+				2719DD8A17DF7BCC00DEECAE /* Default.png */,
+				2719DD8C17DF7BCC00DEECAE /* Default@2x.png */,
+				2719DD8E17DF7BCC00DEECAE /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6FEBE34417DE4A1B00271345 /* SlideOutMenu */ = {
-			isa = PBXGroup;
-			children = (
-				6FEBE35C17DE607900271345 /* SlideNavigationController.h */,
-				6FEBE35D17DE607900271345 /* SlideNavigationController.m */,
-			);
-			name = SlideOutMenu;
-			sourceTree = "<group>";
-		};
-		6FEBE35617DE51A700271345 /* globals */ = {
-			isa = PBXGroup;
-			children = (
-				6FEBE35717DE525C00271345 /* GamerSocialGlobals.h */,
-				6FEBE35817DE525C00271345 /* GamerSocialGlobals.m */,
-			);
-			name = globals;
-			sourceTree = "<group>";
-		};
-		6FEBE35F17DE629100271345 /* graphics */ = {
-			isa = PBXGroup;
-			children = (
-				6FEBE36017DE62C600271345 /* menu-button.png */,
-				6FEBE36117DE62C600271345 /* menu-button@2x.png */,
-			);
-			name = graphics;
-			sourceTree = "<group>";
-		};
-		6FEBE36417DE685C00271345 /* models */ = {
-			isa = PBXGroup;
-			children = (
-				6FEBE36517DE686A00271345 /* table cells */,
-			);
-			name = models;
-			sourceTree = "<group>";
-		};
-		6FEBE36517DE686A00271345 /* table cells */ = {
-			isa = PBXGroup;
-			children = (
-				6FEBE36617DE688600271345 /* CustomMenuCell.h */,
-				6FEBE36717DE688600271345 /* CustomMenuCell.m */,
-			);
-			name = "table cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6FEBE31D17DE489200271345 /* GamerSocial */ = {
+		2719DD7417DF7BCC00DEECAE /* GamerSocial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FEBE34117DE489200271345 /* Build configuration list for PBXNativeTarget "GamerSocial" */;
+			buildConfigurationList = 2719DD9E17DF7BCC00DEECAE /* Build configuration list for PBXNativeTarget "GamerSocial" */;
 			buildPhases = (
-				6FEBE31A17DE489200271345 /* Sources */,
-				6FEBE31B17DE489200271345 /* Frameworks */,
-				6FEBE31C17DE489200271345 /* Resources */,
+				2719DD7117DF7BCC00DEECAE /* Sources */,
+				2719DD7217DF7BCC00DEECAE /* Frameworks */,
+				2719DD7317DF7BCC00DEECAE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -190,82 +124,76 @@
 			);
 			name = GamerSocial;
 			productName = GamerSocial;
-			productReference = 6FEBE31E17DE489200271345 /* GamerSocial.app */;
+			productReference = 2719DD7517DF7BCC00DEECAE /* GamerSocial.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6FEBE31617DE489200271345 /* Project object */ = {
+		2719DD6D17DF7BCC00DEECAE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = mike.tihonchik;
+				ORGANIZATIONNAME = "mike tihonchik";
 			};
-			buildConfigurationList = 6FEBE31917DE489200271345 /* Build configuration list for PBXProject "GamerSocial" */;
+			buildConfigurationList = 2719DD7017DF7BCC00DEECAE /* Build configuration list for PBXProject "GamerSocial" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 6FEBE31517DE489200271345;
-			productRefGroup = 6FEBE31F17DE489200271345 /* Products */;
+			mainGroup = 2719DD6C17DF7BCC00DEECAE;
+			productRefGroup = 2719DD7617DF7BCC00DEECAE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6FEBE31D17DE489200271345 /* GamerSocial */,
+				2719DD7417DF7BCC00DEECAE /* GamerSocial */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6FEBE31C17DE489200271345 /* Resources */ = {
+		2719DD7317DF7BCC00DEECAE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FEBE32C17DE489200271345 /* InfoPlist.strings in Resources */,
-				6FEBE33417DE489200271345 /* Default.png in Resources */,
-				6FEBE33617DE489200271345 /* Default@2x.png in Resources */,
-				6FEBE33817DE489200271345 /* Default-568h@2x.png in Resources */,
-				6FEBE33B17DE489200271345 /* MainStoryboard.storyboard in Resources */,
-				6FEBE36217DE62C600271345 /* menu-button.png in Resources */,
-				6FEBE36317DE62C600271345 /* menu-button@2x.png in Resources */,
+				2719DD8317DF7BCC00DEECAE /* InfoPlist.strings in Resources */,
+				2719DD8B17DF7BCC00DEECAE /* Default.png in Resources */,
+				2719DD8D17DF7BCC00DEECAE /* Default@2x.png in Resources */,
+				2719DD8F17DF7BCC00DEECAE /* Default-568h@2x.png in Resources */,
+				2719DD9B17DF7BCC00DEECAE /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6FEBE31A17DE489200271345 /* Sources */ = {
+		2719DD7117DF7BCC00DEECAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FEBE32E17DE489200271345 /* main.m in Sources */,
-				6FEBE33217DE489200271345 /* AppDelegate.m in Sources */,
-				6FEBE35217DE4DC700271345 /* HomeViewController.m in Sources */,
-				6FEBE35517DE4F2B00271345 /* SlideOutMenuViewController.m in Sources */,
-				6FEBE35917DE525C00271345 /* GamerSocialGlobals.m in Sources */,
-				6FEBE35E17DE607A00271345 /* SlideNavigationController.m in Sources */,
-				6FEBE36817DE688600271345 /* CustomMenuCell.m in Sources */,
+				2719DD8517DF7BCC00DEECAE /* main.m in Sources */,
+				2719DD8917DF7BCC00DEECAE /* AppDelegate.m in Sources */,
+				2719DDA317DF7C8000DEECAE /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6FEBE32A17DE489200271345 /* InfoPlist.strings */ = {
+		2719DD8117DF7BCC00DEECAE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6FEBE32B17DE489200271345 /* en */,
+				2719DD8217DF7BCC00DEECAE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6FEBE33917DE489200271345 /* MainStoryboard.storyboard */ = {
+		2719DD9917DF7BCC00DEECAE /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6FEBE33A17DE489200271345 /* en */,
+				2719DD9A17DF7BCC00DEECAE /* en */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -273,7 +201,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6FEBE33F17DE489200271345 /* Debug */ = {
+		2719DD9C17DF7BCC00DEECAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -304,7 +232,7 @@
 			};
 			name = Debug;
 		};
-		6FEBE34017DE489200271345 /* Release */ = {
+		2719DD9D17DF7BCC00DEECAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -329,7 +257,7 @@
 			};
 			name = Release;
 		};
-		6FEBE34217DE489200271345 /* Debug */ = {
+		2719DD9F17DF7BCC00DEECAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -340,7 +268,7 @@
 			};
 			name = Debug;
 		};
-		6FEBE34317DE489200271345 /* Release */ = {
+		2719DDA017DF7BCC00DEECAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -354,25 +282,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6FEBE31917DE489200271345 /* Build configuration list for PBXProject "GamerSocial" */ = {
+		2719DD7017DF7BCC00DEECAE /* Build configuration list for PBXProject "GamerSocial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6FEBE33F17DE489200271345 /* Debug */,
-				6FEBE34017DE489200271345 /* Release */,
+				2719DD9C17DF7BCC00DEECAE /* Debug */,
+				2719DD9D17DF7BCC00DEECAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FEBE34117DE489200271345 /* Build configuration list for PBXNativeTarget "GamerSocial" */ = {
+		2719DD9E17DF7BCC00DEECAE /* Build configuration list for PBXNativeTarget "GamerSocial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6FEBE34217DE489200271345 /* Debug */,
-				6FEBE34317DE489200271345 /* Release */,
+				2719DD9F17DF7BCC00DEECAE /* Debug */,
+				2719DDA017DF7BCC00DEECAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6FEBE31617DE489200271345 /* Project object */;
+	rootObject = 2719DD6D17DF7BCC00DEECAE /* Project object */;
 }
