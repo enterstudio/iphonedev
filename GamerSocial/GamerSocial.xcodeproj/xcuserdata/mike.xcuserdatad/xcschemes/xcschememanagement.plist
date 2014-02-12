@@ -12,7 +12,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+<<<<<<< HEAD:GamerSocial/GamerSocial.xcodeproj/xcuserdata/mike.xcuserdatad/xcschemes/xcschememanagement.plist
 		<key>2719DD7417DF7BCC00DEECAE</key>
+=======
+		<key>6F0CCEF417ECB39B00993392</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6F0CCF1B17ECB39C00993392</key>
+>>>>>>> 5a6d64ed9f2ef2f3f5390ddc0999e70a65c3c8bf:GamerSocial/GamerSocial.xcodeproj/xcuserdata/mtihonc1.xcuserdatad/xcschemes/xcschememanagement.plist
 		<dict>
 			<key>primary</key>
 			<true/>

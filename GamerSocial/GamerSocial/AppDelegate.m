@@ -2,17 +2,34 @@
 //  AppDelegate.m
 //  GamerSocial
 //
+<<<<<<< HEAD
 //  Created by мишаня on 9/10/13.
 //  Copyright (c) 2013 mike tihonchik. All rights reserved.
 //
 
 #import "AppDelegate.h"
+=======
+//  Created by mike.tihonchik on 9/20/13.
+//  Copyright (c) 2013 mike.tihonchik. All rights reserved.
+//
+
+#import "AppDelegate.h"
+#import "MainViewController.h"
+>>>>>>> 5a6d64ed9f2ef2f3f5390ddc0999e70a65c3c8bf
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+<<<<<<< HEAD
     // Override point for customization after application launch.
+=======
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    self.viewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
+>>>>>>> 5a6d64ed9f2ef2f3f5390ddc0999e70a65c3c8bf
     return YES;
 }
 
@@ -24,7 +41,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
