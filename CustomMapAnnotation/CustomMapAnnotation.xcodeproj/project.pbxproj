@@ -21,6 +21,7 @@
 		6FCF106B18AA92BB00A53C5E /* CustomMapAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF106918AA92BB00A53C5E /* CustomMapAnnotationViewController.m */; };
 		6FCF106C18AA92BB00A53C5E /* CustomMapAnnotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FCF106A18AA92BB00A53C5E /* CustomMapAnnotationViewController.xib */; };
 		6FCF106F18AA9B6300A53C5E /* CustomMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF106E18AA9B6300A53C5E /* CustomMapAnnotationView.m */; };
+		6FCF107818AABFC100A53C5E /* DefaultAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF107718AABFC100A53C5E /* DefaultAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		6FCF106A18AA92BB00A53C5E /* CustomMapAnnotationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMapAnnotationViewController.xib; sourceTree = "<group>"; };
 		6FCF106D18AA9B6300A53C5E /* CustomMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMapAnnotationView.h; sourceTree = "<group>"; };
 		6FCF106E18AA9B6300A53C5E /* CustomMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMapAnnotationView.m; sourceTree = "<group>"; };
+		6FCF107618AABFC100A53C5E /* DefaultAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultAnnotation.h; sourceTree = "<group>"; };
+		6FCF107718AABFC100A53C5E /* DefaultAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 		6FCF105A18AA8BDA00A53C5E /* custom */ = {
 			isa = PBXGroup;
 			children = (
+				6FCF107618AABFC100A53C5E /* DefaultAnnotation.h */,
+				6FCF107718AABFC100A53C5E /* DefaultAnnotation.m */,
 				6FCF105B18AA8BF200A53C5E /* CustomMapAnnotation.h */,
 				6FCF105C18AA8BF200A53C5E /* CustomMapAnnotation.m */,
 				6FCF106818AA92BB00A53C5E /* CustomMapAnnotationViewController.h */,
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FCF107818AABFC100A53C5E /* DefaultAnnotation.m in Sources */,
 				6FCF105D18AA8BF200A53C5E /* CustomMapAnnotation.m in Sources */,
 				6FCF106F18AA9B6300A53C5E /* CustomMapAnnotationView.m in Sources */,
 				6FCF106B18AA92BB00A53C5E /* CustomMapAnnotationViewController.m in Sources */,
