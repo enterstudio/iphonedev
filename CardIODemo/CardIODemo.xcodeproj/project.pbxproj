@@ -78,6 +78,7 @@
 		6F786B5118EA00AB00793ECE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		6F786B5218EA00AB00793ECE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6F786B5318EA00AB00793ECE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6FBA4A4618EB1503001F1632 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +156,7 @@
 		6F786B1118E9F95000793ECE /* CardIODemo */ = {
 			isa = PBXGroup;
 			children = (
+				6FBA4A4718EB1835001F1632 /* images */,
 				6F786B4018E9FA1D00793ECE /* CardIO */,
 				6F786B1A18E9F95000793ECE /* AppDelegate.h */,
 				6F786B1B18E9F95000793ECE /* AppDelegate.m */,
@@ -163,6 +165,7 @@
 				6F786B2118E9F95000793ECE /* ViewController.m */,
 				6F786B2318E9F95000793ECE /* Images.xcassets */,
 				6F786B1218E9F95000793ECE /* Supporting Files */,
+				6FBA4A4618EB1503001F1632 /* Constants.h */,
 			);
 			path = CardIODemo;
 			sourceTree = "<group>";
@@ -208,6 +211,13 @@
 				6F786B4718E9FA2E00793ECE /* libCardIO.a */,
 			);
 			name = CardIO;
+			sourceTree = "<group>";
+		};
+		6FBA4A4718EB1835001F1632 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,6 +542,7 @@
 				6F786B3C18E9F95000793ECE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F786B3D18E9F95000793ECE /* Build configuration list for PBXNativeTarget "CardIODemoTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +551,7 @@
 				6F786B3F18E9F95000793ECE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

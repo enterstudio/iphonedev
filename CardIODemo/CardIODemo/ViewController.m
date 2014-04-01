@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CardIO.h"
+#import "Constants.h"
 
 @interface ViewController () <CardIOPaymentViewControllerDelegate>
 
@@ -23,6 +24,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.infoLabel.text = @"";
+
+    UIButton *scanButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [scanButton addTarget:self action:@selector(scanCardClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [scanButton setTitle:@"Scan Card" forState:UIControlStateNormal];
+    scanButton.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
+    [self.view addSubview:scanButton];
+    
+    UILabel *cardIOLabel =  [[UILabel alloc] initWithFrame: CGRectMake(80.0, 350.0, 160.0, 40.0)];
+    cardIOLabel.text = @"card.io";
+    cardIOLabel.font = HELVETICA_BOLD(48);
+    cardIOLabel.textColor = [UIColor colorWithRed:(102/255.f) green:(255/255.f) blue:(0/255.f) alpha:1.0f];
+    [self.view addSubview:cardIOLabel];
 }
 
 #pragma mark - User Actions
