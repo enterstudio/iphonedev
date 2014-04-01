@@ -25,17 +25,7 @@
     [super viewDidLoad];
     self.infoLabel.text = @"";
 
-    UIButton *scanButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [scanButton addTarget:self action:@selector(scanCardClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [scanButton setTitle:@"Scan Card" forState:UIControlStateNormal];
-    scanButton.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
-    [self.view addSubview:scanButton];
-    
-    UILabel *cardIOLabel =  [[UILabel alloc] initWithFrame: CGRectMake(80.0, 350.0, 160.0, 40.0)];
-    cardIOLabel.text = @"card.io";
-    cardIOLabel.font = HELVETICA_BOLD(48);
-    cardIOLabel.textColor = [UIColor colorWithRed:(102/255.f) green:(255/255.f) blue:(0/255.f) alpha:1.0f];
-    [self.view addSubview:cardIOLabel];
+    [self setupGuiStyle];
 }
 
 #pragma mark - User Actions
@@ -60,6 +50,34 @@
 - (void)userDidCancelPaymentViewController:(CardIOPaymentViewController *)paymentViewController {
     NSLog(@"User cancelled scan");
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - Setup GUI
+
+- (void)setupGuiStyle {
+    NSString *backgroundImage = @"view-background.png";
+    int screenHeight = 480;
+    if(IS_IPHONE_5) {
+        backgroundImage = @"view-background-i5.png";
+        screenHeight = 568;
+    }
+    
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:backgroundImage]];
+    backgroundView.frame = self.view.bounds;
+    [self.view addSubview:backgroundView];
+
+    UIImageView *logo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cardio.png"]];
+    logo.frame = CGRectMake(5, screenHeight - 220, logo.frame.size.width, logo.frame.size.height);
+    [self.view addSubview:logo];
+    
+    UIImageView *cornerImage =  [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"view-background-left-corner.png"]];
+    cornerImage.frame = CGRectMake(0.0, screenHeight - 60, 60.0, 60.0);
+    [self.view addSubview:cornerImage];
+    
+    UIImageView *demoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"demo.png"]];
+    demoView.frame = CGRectMake(200.0, screenHeight - 110, 100.0, 100.0);;
+    [self.view addSubview:demoView];
+    
 }
 
 @end
