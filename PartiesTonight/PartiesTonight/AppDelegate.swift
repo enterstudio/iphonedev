@@ -12,10 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var mainNC: MainNavigationController!
+    var appContext = AppContext()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        mainNC = self.window?.rootViewController as! MainNavigationController
+        mainNC.switchToPrimaryScreen(mainNC.initialDisplayScreen, animationOptions: nil)
         return true
     }
 
