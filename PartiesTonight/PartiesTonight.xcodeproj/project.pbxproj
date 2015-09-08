@@ -11,6 +11,7 @@
 		124AC8CD1B9F526D006BA5AD /* PartiesConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124AC8CC1B9F526D006BA5AD /* PartiesConstants.swift */; };
 		124AC8CF1B9F52F3006BA5AD /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124AC8CE1B9F52F3006BA5AD /* AuthenticationViewController.swift */; };
 		124AC8D11B9F5340006BA5AD /* AuthenticationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124AC8D01B9F5340006BA5AD /* AuthenticationConstants.swift */; };
+		124AC8D31B9F76B5006BA5AD /* PartyTabBartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124AC8D21B9F76B5006BA5AD /* PartyTabBartViewController.swift */; };
 		128657BA1B99F6FE0018C6FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128657B91B99F6FE0018C6FA /* AppDelegate.swift */; };
 		128657BF1B99F6FE0018C6FA /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128657BD1B99F6FE0018C6FA /* Authentication.storyboard */; };
 		128657C11B99F6FE0018C6FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128657C01B99F6FE0018C6FA /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		124AC8CC1B9F526D006BA5AD /* PartiesConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartiesConstants.swift; sourceTree = "<group>"; };
 		124AC8CE1B9F52F3006BA5AD /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		124AC8D01B9F5340006BA5AD /* AuthenticationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationConstants.swift; sourceTree = "<group>"; };
+		124AC8D21B9F76B5006BA5AD /* PartyTabBartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyTabBartViewController.swift; sourceTree = "<group>"; };
 		128657B61B99F6FE0018C6FA /* PartiesTonight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartiesTonight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		128657B91B99F6FE0018C6FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		128657BE1B99F6FE0018C6FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Authentication.storyboard; sourceTree = "<group>"; };
@@ -83,11 +85,11 @@
 		128657B81B99F6FE0018C6FA /* PartiesTonight */ = {
 			isa = PBXGroup;
 			children = (
+				128657B91B99F6FE0018C6FA /* AppDelegate.swift */,
+				128657C21B99F6FE0018C6FA /* LaunchScreen.storyboard */,
 				12CCA9061B9F42BC00673562 /* Main */,
 				12CCA9071B9F42C600673562 /* Parties */,
 				12CCA9051B9F429200673562 /* Authentication */,
-				128657B91B99F6FE0018C6FA /* AppDelegate.swift */,
-				128657C21B99F6FE0018C6FA /* LaunchScreen.storyboard */,
 				12CCA8FD1B9F33BF00673562 /* Common */,
 				128CC81E1B99FF1D00AB477B /* Support Files */,
 				128657C01B99F6FE0018C6FA /* Assets.xcassets */,
@@ -149,6 +151,7 @@
 				12CCA8F61B9F319100673562 /* PartyFeedViewController.swift */,
 				12CCA90A1B9F433C00673562 /* Parties.storyboard */,
 				124AC8CC1B9F526D006BA5AD /* PartiesConstants.swift */,
+				124AC8D21B9F76B5006BA5AD /* PartyTabBartViewController.swift */,
 			);
 			name = Parties;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				12CCA9041B9F36CC00673562 /* UIViewController+Extension.swift in Sources */,
 				128657BA1B99F6FE0018C6FA /* AppDelegate.swift in Sources */,
 				12CCA8FF1B9F33DF00673562 /* AppConstants.swift in Sources */,
+				124AC8D31B9F76B5006BA5AD /* PartyTabBartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

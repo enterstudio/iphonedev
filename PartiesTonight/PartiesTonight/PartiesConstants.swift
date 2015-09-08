@@ -15,6 +15,7 @@ struct PartiesConstants {
     
     enum PartiesViewControllerId : String {
         
+        case PartyTabBar = "PartyTabBarVC"
         case PartyFeed = "PartyFeedVC"
     }
 }

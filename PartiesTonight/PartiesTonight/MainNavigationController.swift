@@ -46,7 +46,7 @@ class MainNavigationController: UINavigationController {
                 newRootVC = AuthenticationConstants.storyboard.instantiateViewControllerWithIdentifier(AuthenticationConstants.AuthenticationViewControllerId.Login.rawValue)
             
             case .Feed:
-                newRootVC = PartiesConstants.storyboard.instantiateViewControllerWithIdentifier(PartiesConstants.PartiesViewControllerId.PartyFeed.rawValue)
+                newRootVC = PartiesConstants.storyboard.instantiateViewControllerWithIdentifier(PartiesConstants.PartiesViewControllerId.PartyTabBar.rawValue)
         }
         
         if currentRootVC == nil {

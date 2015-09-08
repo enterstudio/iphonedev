@@ -13,31 +13,98 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="6uc-ho-4uT" kind="relationship" relationship="rootViewController" id="Olz-LE-Hef"/>
+                        <segue destination="Oac-XR-zH6" kind="relationship" relationship="rootViewController" id="CfG-Bc-dbf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Plb-95-p1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-618" y="219"/>
+            <point key="canvasLocation" x="-346" y="256"/>
         </scene>
-        <!--Party Feed View Controller-->
-        <scene sceneID="5KG-Qc-jc8">
+        <!--My City Scene-->
+        <scene sceneID="HmG-Rw-rCL">
             <objects>
-                <viewController storyboardIdentifier="PartyFeedVC" id="6uc-ho-4uT" customClass="PartyFeedViewController" customModule="PartiesTonight" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="My City Scene" id="GXb-ao-ygP" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Z8G-pt-8sJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="cYv-dT-0Mr"/>
+                        <viewControllerLayoutGuide type="top" id="1TP-nX-hOD"/>
+                        <viewControllerLayoutGuide type="bottom" id="sEM-KX-WXX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bW-Hp-ERT">
+                    <view key="view" contentMode="scaleToFill" id="bnU-Ra-L7x">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eAO-H5-y8b"/>
+                    <tabBarItem key="tabBarItem" title="My City" id="HVQ-le-07l" userLabel="My City"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b9j-ou-fZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g2c-5h-SvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="176" y="219"/>
+            <point key="canvasLocation" x="1376" y="165"/>
+        </scene>
+        <!--My Spots Scene-->
+        <scene sceneID="vJ4-cI-2zO">
+            <objects>
+                <viewController title="My Spots Scene" id="eMz-KQ-Gc2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XkV-2s-Zd7"/>
+                        <viewControllerLayoutGuide type="bottom" id="NKF-MW-Nsf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XtC-WL-bKq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Spots" id="YJ5-mE-SqF" userLabel="My Spots"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wf-Ka-TIR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376" y="847"/>
+        </scene>
+        <!--Party Feed Scene-->
+        <scene sceneID="Ex9-bk-pxX">
+            <objects>
+                <viewController title="Party Feed Scene" id="02S-8x-mNW" customClass="PartyFeedViewController" customModule="PartiesTonight" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZRB-UI-Be6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yd8-rG-NRa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qcE-V9-YNN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Party Feed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5u-3W-5QK">
+                                <rect key="frame" x="20" y="72" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="OverALL" id="X82-w6-Tb6" userLabel="OverALL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTp-Ps-MME" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376" y="-518"/>
+        </scene>
+        <!--Party Tab Bart View Controller-->
+        <scene sceneID="dU7-zP-FhY">
+            <objects>
+                <tabBarController storyboardIdentifier="PartyTabBarVC" id="Oac-XR-zH6" customClass="PartyTabBartViewController" customModule="PartiesTonight" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jNt-8u-2nA"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="TJt-Rq-I9v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="02S-8x-mNW" kind="relationship" relationship="viewControllers" id="yqM-jf-Jjf"/>
+                        <segue destination="GXb-ao-ygP" kind="relationship" relationship="viewControllers" id="L2U-H5-7Jp"/>
+                        <segue destination="eMz-KQ-Gc2" kind="relationship" relationship="viewControllers" id="rVV-17-7oz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPz-4M-0jT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="256"/>
         </scene>
     </scenes>
 </document>
