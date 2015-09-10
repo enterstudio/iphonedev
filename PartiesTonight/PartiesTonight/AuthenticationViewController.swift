@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import TwitterKit
 
 class AuthenticationViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBOutlet weak var googleSignInBtn: UIView!
+    @IBOutlet weak var twitterSignInBtn: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,10 @@ class AuthenticationViewController: UIViewController, GIDSignInUIDelegate {
         
         // TODO(developer) Configure the sign-in button look/feel
         // ...
+        
+        twitterSignInBtn = TWTRLogInButton { (session, error) in
+            // play with Twitter session
+        }
     }
     
     override func viewWillAppear(animated: Bool) {

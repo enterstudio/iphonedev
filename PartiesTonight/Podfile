@@ -3,4 +3,7 @@
 
 target 'PartiesTonight' do
 pod 'Google/SignIn'
+pod 'Fabric'
+pod 'TwitterKit'
+pod 'TwitterCore'
 end

@@ -1,4 +1,7 @@
 PODS:
+  - Fabric (1.5.0):
+    - Fabric/Base (= 1.5.0)
+  - Fabric/Base (1.5.0)
   - Google/Core (1.0.7):
     - GoogleNetworkingUtilities (~> 1.0)
     - GoogleSymbolUtilities (~> 1.0)
@@ -21,11 +24,17 @@ PODS:
   - GoogleSymbolUtilities (1.0.0)
   - GoogleUtilities (1.0.1):
     - GoogleSymbolUtilities (~> 1.0)
+  - TwitterCore (1.9.0)
+  - TwitterKit (1.9.0)
 
 DEPENDENCIES:
+  - Fabric
   - Google/SignIn
+  - TwitterCore
+  - TwitterKit
 
 SPEC CHECKSUMS:
+  Fabric: 374a4a0bbefa219ed201cbc84f2f42e4029302a6
   Google: 875f5a8ade86dd02e36586e4a54814843938c7f6
   GoogleAppUtilities: c01c6a5671e9da8b9d690fdaec5959d6c2aac699
   GoogleAuthUtilities: 049ffd3a297cdffd271451b82fd4e75304f15ef3
@@ -33,5 +42,7 @@ SPEC CHECKSUMS:
   GoogleSignIn: c45d8d1a873784a3283b4f47f331dc06d8a727b6
   GoogleSymbolUtilities: a7b0feed1fe667c8d5e647177938d0ecd62d6948
   GoogleUtilities: e3475cd4d45134221d2f3f3626095a1c49b62041
+  TwitterCore: 98ed97a6047c4ef109522840337e815683ead7e5
+  TwitterKit: 1492792649dee11c2087498f7993f529bdb6c870
 
 COCOAPODS: 0.38.2
