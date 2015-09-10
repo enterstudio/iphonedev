@@ -24,7 +24,7 @@ class MainNavigationController: UINavigationController {
         if appContext.isRegistrationComplete && !isLoggedIn {
             return PrimaryScreen.Authentiation
         } else {
-            return PrimaryScreen.Authentiation  
+            return PrimaryScreen.Feed
         }
     }
     
@@ -59,5 +59,9 @@ class MainNavigationController: UINavigationController {
                 self.setViewControllers([newRootVC], animated: false)
                 self.currentRootVC = newRootVC
         })}
+    }
+    
+    func handleAddPartyBtn() {
+        print("Add button clicked")
     }
 }

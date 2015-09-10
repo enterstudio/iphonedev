@@ -11,6 +11,12 @@ import UIKit
 class PartyTabBartViewController: UITabBarController {
     
     override func viewWillAppear(animated: Bool) {
+        let addPartyBtn = UIBarButtonItem(title: "+", style: .Done, target: self, action: "handleAddPartyBtn:")
+        let settingsBtn = UIBarButtonItem(title: "SET", style: .Done, target: self, action: "handleAddPartyBtn:")
+        let locationBtn = UIBarButtonItem(title: "MAP", style: .Done, target: self, action: "handleAddPartyBtn:")
+        navigationItem.rightBarButtonItems = [settingsBtn, addPartyBtn]
+        navigationItem.leftBarButtonItem = locationBtn
+
         let tabBar = self.tabBar
         let tabBarItem1 = tabBar.items![0] as UITabBarItem
         let tabBarItem2 = tabBar.items![1] as UITabBarItem

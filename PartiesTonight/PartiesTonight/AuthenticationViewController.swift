@@ -24,4 +24,7 @@ class AuthenticationViewController: UIViewController, GIDSignInUIDelegate {
         // ...
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
 }
