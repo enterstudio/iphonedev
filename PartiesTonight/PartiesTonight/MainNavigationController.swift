@@ -24,7 +24,7 @@ class MainNavigationController: UINavigationController {
         if appContext.isRegistrationComplete && !isLoggedIn {
             return PrimaryScreen.Authentiation
         } else {
-            return PrimaryScreen.Feed
+            return PrimaryScreen.Authentiation  
         }
     }
     

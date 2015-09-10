@@ -40,6 +40,12 @@
 		128657C31B99F6FE0018C6FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		128657C51B99F6FE0018C6FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PartiesTonight/Info.plist; sourceTree = "<group>"; };
 		128CC81F1B99FF7A00AB477B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "PartiesTonight/Support Files/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		12ACE39A1BA1CC2A0064883B /* PartiesTonight-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PartiesTonight-Bridging-Header.h"; path = "PartiesTonight/Support Files/PartiesTonight-Bridging-Header.h"; sourceTree = "<group>"; };
+		12ACE39B1BA1CCC70064883B /* libSignIn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSignIn.a; path = Pods/GoogleSignIn/Libraries/libSignIn.a; sourceTree = "<group>"; };
+		12ACE39D1BA1CCFA0064883B /* libGGLCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGGLCore.a; path = Pods/Google/Libraries/libGGLCore.a; sourceTree = "<group>"; };
+		12ACE39E1BA1CCFA0064883B /* libGGLSignIn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGGLSignIn.a; path = Pods/Google/Libraries/libGGLSignIn.a; sourceTree = "<group>"; };
+		12ACE3A11BA1CEC90064883B /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = Pods/GoogleSignIn/Resources/GoogleSignIn.bundle; sourceTree = "<group>"; };
+		12ACE3A41BA1CEF00064883B /* libGIDExShared.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGIDExShared.a; path = Pods/GoogleSignIn/Libraries/libGIDExShared.a; sourceTree = "<group>"; };
 		12CCA8F61B9F319100673562 /* PartyFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyFeedViewController.swift; sourceTree = "<group>"; };
 		12CCA8FB1B9F330700673562 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		12CCA8FE1B9F33DF00673562 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 		128CC81E1B99FF1D00AB477B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				12ACE39A1BA1CC2A0064883B /* PartiesTonight-Bridging-Header.h */,
 				128657C51B99F6FE0018C6FA /* Info.plist */,
 				128CC81F1B99FF7A00AB477B /* GoogleService-Info.plist */,
 			);
@@ -159,6 +166,11 @@
 		9A7132E2F3F6EE0BD839A6ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				12ACE3A41BA1CEF00064883B /* libGIDExShared.a */,
+				12ACE3A11BA1CEC90064883B /* GoogleSignIn.bundle */,
+				12ACE39D1BA1CCFA0064883B /* libGGLCore.a */,
+				12ACE39E1BA1CCFA0064883B /* libGGLSignIn.a */,
+				12ACE39B1BA1CCC70064883B /* libSignIn.a */,
 				BFF18047A0F940B04D0BC54D /* libPods-PartiesTonight.a */,
 			);
 			name = Frameworks;
@@ -407,8 +419,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PartiesTonight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleSignIn/Libraries",
+					"$(PROJECT_DIR)/Pods/Google/Libraries",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.angryguy.PartiesTonight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "partiesTonight/Support Files/PartiesTonight-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -419,8 +437,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PartiesTonight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleSignIn/Libraries",
+					"$(PROJECT_DIR)/Pods/Google/Libraries",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.angryguy.PartiesTonight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "partiesTonight/Support Files/PartiesTonight-Bridging-Header.h";
 			};
 			name = Release;
 		};

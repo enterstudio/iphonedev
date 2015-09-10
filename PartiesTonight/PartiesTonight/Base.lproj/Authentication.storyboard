@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
     </dependencies>
     <scenes>
         <!--Authentication View Controller-->
@@ -69,6 +69,14 @@
                                 <rect key="frame" x="328" y="391" width="57" height="30"/>
                                 <state key="normal" title="Register"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2Y-T8-ECD" customClass="GIDSignInButton">
+                                <rect key="frame" x="268" y="496" width="65" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="fqk-Q3-k5w"/>
+                                    <constraint firstAttribute="height" constant="65" id="tzL-Oo-MTQ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -76,6 +84,7 @@
                             <constraint firstItem="kLZ-Wa-wWx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4su-k7-Ix8"/>
                             <constraint firstItem="8Kc-8C-yPw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9lP-Oq-cIs"/>
                             <constraint firstItem="Wfx-xa-DiU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EAE-vK-TIb"/>
+                            <constraint firstItem="e2Y-T8-ECD" firstAttribute="top" secondItem="Wfx-xa-DiU" secondAttribute="bottom" constant="15" id="K8s-Zt-BJK"/>
                             <constraint firstItem="gGg-D5-Crj" firstAttribute="top" secondItem="r0d-SV-cdr" secondAttribute="bottom" constant="16" id="PR7-8C-aSd"/>
                             <constraint firstItem="gY3-Ux-vpV" firstAttribute="top" secondItem="r0d-SV-cdr" secondAttribute="bottom" constant="20" id="TUf-Dg-UYe"/>
                             <constraint firstItem="bb3-as-CRM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W9O-Dh-e2O"/>
@@ -84,6 +93,7 @@
                             <constraint firstItem="gGg-D5-Crj" firstAttribute="leading" secondItem="gY3-Ux-vpV" secondAttribute="trailing" constant="25" id="f9z-0d-t0e"/>
                             <constraint firstItem="peD-6K-JeQ" firstAttribute="top" secondItem="r0d-SV-cdr" secondAttribute="bottom" constant="16" id="gRq-j2-aUj"/>
                             <constraint firstItem="Wfx-xa-DiU" firstAttribute="top" secondItem="gY3-Ux-vpV" secondAttribute="bottom" constant="45" id="jGc-sU-oZ6"/>
+                            <constraint firstItem="e2Y-T8-ECD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kIf-NF-iKc"/>
                             <constraint firstItem="kLZ-Wa-wWx" firstAttribute="top" secondItem="bb3-as-CRM" secondAttribute="bottom" constant="20" id="sxU-EG-caB"/>
                             <constraint firstItem="gY3-Ux-vpV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tIQ-JS-tLt"/>
                             <constraint firstItem="bb3-as-CRM" firstAttribute="top" secondItem="8Kc-8C-yPw" secondAttribute="bottom" constant="30" id="vhn-7m-ZDa"/>
@@ -91,6 +101,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bOW-k1-lTV"/>
+                    <connections>
+                        <outlet property="googleSignInBtn" destination="e2Y-T8-ECD" id="rzP-hV-sEu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,33 +124,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhc-gZ-wFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-517" y="417"/>
-        </scene>
-        <!--Party Feed View Controller-->
-        <scene sceneID="KCA-Jv-eEn">
-            <objects>
-                <viewController storyboardIdentifier="FeedVC" id="LZD-WF-5JB" customClass="PartyFeedViewController" customModule="PartiesTonight" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ADB-If-N0k"/>
-                        <viewControllerLayoutGuide type="bottom" id="YV6-6F-ERx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JX2-w1-xxc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vh-xa-OeJ">
-                                <rect key="frame" x="20" y="72" width="42" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Wb7-Dc-v9o"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XoB-Cz-3BK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1090" y="1235"/>
         </scene>
     </scenes>
 </document>

@@ -9,15 +9,26 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
     var mainNC: MainNavigationController!
     var appContext = AppContext()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        UINavigationBar.appearance().backgroundColor = UIColor(red: 250/255, green: 212/255, blue: 0/255, alpha: 1.0)
+        
         mainNC = self.window?.rootViewController as! MainNavigationController
         mainNC.switchToPrimaryScreen(mainNC.initialDisplayScreen, animationOptions: nil)
+        
+        
+        /** Initialize Google sign-in */
+        var configureError: NSError?
+        GGLContext.sharedInstance().configureWithError(&configureError)
+        assert(configureError == nil, "Error configuring Google services: \(configureError)")
+        GIDSignIn.sharedInstance().delegate = self
+        
         return true
     }
 
@@ -41,6 +52,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+// MARK: Google sign-in delegate methods
+    
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
+        if (error == nil) {
+//            let userId = user.userID                  // For client-side use only!
+//            let idToken = user.authentication.idToken // Safe to send to the server
+//            let name = user.profile.name
+//            let email = user.profile.email
+        } else {
+            print("\(error.localizedDescription)")
+        }
+    }
+    
+    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!, withError error: NSError!) {
+            // Perform any operations when the user disconnects from app here.
+            // ...
     }
 }
 

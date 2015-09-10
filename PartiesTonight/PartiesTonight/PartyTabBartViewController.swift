@@ -20,7 +20,7 @@ class PartyTabBartViewController: UITabBarController {
         tabBarItem2.title = "My City"
         tabBarItem3.title = "My Spots"
         
-        UITabBar.appearance().tintColor = UIColor(colorLiteralRed: 28/255, green:134/255, blue:244/255, alpha:1.0)
-        UITabBar.appearance().backgroundColor = UIColor(colorLiteralRed: 248/255, green:248/255, blue:248/255, alpha:1.0)
+        UITabBar.appearance().tintColor = UIColor(red: 28/255, green:134/255, blue:244/255, alpha:1.0)
+        UITabBar.appearance().backgroundColor = UIColor(red: 248/255, green:248/255, blue:248/255, alpha:1.0)
     }
 }
