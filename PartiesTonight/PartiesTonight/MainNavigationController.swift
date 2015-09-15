@@ -22,9 +22,9 @@ class MainNavigationController: UINavigationController {
     
     var initialDisplayScreen: PrimaryScreen {
         if appContext.isRegistrationComplete && !isLoggedIn {
-            return PrimaryScreen.Authentiation
+            return PrimaryScreen.Feed
         } else {
-            return PrimaryScreen.Authentiation
+            return PrimaryScreen.Feed
         }
     }
     

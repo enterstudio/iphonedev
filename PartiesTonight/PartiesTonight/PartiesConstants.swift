@@ -17,5 +17,6 @@ struct PartiesConstants {
         
         case PartyTabBar = "PartyTabBarVC"
         case PartyFeed = "PartyFeedVC"
+        case LocationView = "MapVC"
     }
 }

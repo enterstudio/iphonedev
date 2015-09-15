@@ -21,9 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         UINavigationBar.appearance().backgroundColor = UIColor(red: 250/255, green: 212/255, blue: 0/255, alpha: 1.0)
         
-        mainNC = self.window?.rootViewController as! MainNavigationController
-        mainNC.switchToPrimaryScreen(mainNC.initialDisplayScreen, animationOptions: nil)
-        
+//        mainNC = self.window?.rootViewController as! PartyTabBartViewController
+//        mainNC.switchToPrimaryScreen(mainNC.initialDisplayScreen, animationOptions: nil)
+        PartiesConstants.storyboard.instantiateViewControllerWithIdentifier(PartiesConstants.PartiesViewControllerId.PartyTabBar.rawValue)      
         
         /** Initialize Google sign-in */
         var configureError: NSError?

@@ -11,10 +11,12 @@
 		124AC8CF1B9F52F3006BA5AD /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124AC8CE1B9F52F3006BA5AD /* AuthenticationViewController.swift */; };
 		124AC8D11B9F5340006BA5AD /* AuthenticationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124AC8D01B9F5340006BA5AD /* AuthenticationConstants.swift */; };
 		124AC8D31B9F76B5006BA5AD /* PartyTabBartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124AC8D21B9F76B5006BA5AD /* PartyTabBartViewController.swift */; };
+		125E26FA1BA8AD2A00B7CB4D /* StatusBarContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E26F91BA8AD2A00B7CB4D /* StatusBarContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		128657BA1B99F6FE0018C6FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128657B91B99F6FE0018C6FA /* AppDelegate.swift */; };
 		128657BF1B99F6FE0018C6FA /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128657BD1B99F6FE0018C6FA /* Authentication.storyboard */; };
 		128657C11B99F6FE0018C6FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128657C01B99F6FE0018C6FA /* Assets.xcassets */; };
 		128657C41B99F6FE0018C6FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128657C21B99F6FE0018C6FA /* LaunchScreen.storyboard */; };
+		128C1CD41BA74F1F00EC6401 /* PartyLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128C1CD31BA74F1F00EC6401 /* PartyLocationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		128CC8201B99FF7A00AB477B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 128CC81F1B99FF7A00AB477B /* GoogleService-Info.plist */; };
 		12CCA8F71B9F319100673562 /* PartyFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CCA8F61B9F319100673562 /* PartyFeedViewController.swift */; };
 		12CCA8FC1B9F330700673562 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CCA8FB1B9F330700673562 /* MainNavigationController.swift */; };
@@ -30,12 +32,15 @@
 		124AC8CE1B9F52F3006BA5AD /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		124AC8D01B9F5340006BA5AD /* AuthenticationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationConstants.swift; sourceTree = "<group>"; };
 		124AC8D21B9F76B5006BA5AD /* PartyTabBartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyTabBartViewController.swift; sourceTree = "<group>"; };
+		125E26F91BA8AD2A00B7CB4D /* StatusBarContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarContainerViewController.swift; sourceTree = "<group>"; };
 		128657B61B99F6FE0018C6FA /* PartiesTonight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartiesTonight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		128657B91B99F6FE0018C6FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		128657BE1B99F6FE0018C6FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Authentication.storyboard; sourceTree = "<group>"; };
 		128657C01B99F6FE0018C6FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		128657C31B99F6FE0018C6FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		128657C51B99F6FE0018C6FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PartiesTonight/Info.plist; sourceTree = "<group>"; };
+		128C1CD31BA74F1F00EC6401 /* PartyLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyLocationViewController.swift; sourceTree = "<group>"; };
+		128C1CD51BA752F200EC6401 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		128CC81F1B99FF7A00AB477B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "PartiesTonight/Support Files/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		12ACE39A1BA1CC2A0064883B /* PartiesTonight-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PartiesTonight-Bridging-Header.h"; path = "PartiesTonight/Support Files/PartiesTonight-Bridging-Header.h"; sourceTree = "<group>"; };
 		12ACE39B1BA1CCC70064883B /* libSignIn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSignIn.a; path = Pods/GoogleSignIn/Libraries/libSignIn.a; sourceTree = "<group>"; };
@@ -66,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		125E26F81BA8ACEC00B7CB4D /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				125E26F91BA8AD2A00B7CB4D /* StatusBarContainerViewController.swift */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
 		128657AD1B99F6FE0018C6FA = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +102,10 @@
 			children = (
 				128657B91B99F6FE0018C6FA /* AppDelegate.swift */,
 				128657C21B99F6FE0018C6FA /* LaunchScreen.storyboard */,
-				12CCA9071B9F42C600673562 /* Parties */,
 				12CCA9051B9F429200673562 /* Authentication */,
 				12CCA8FD1B9F33BF00673562 /* Common */,
+				125E26F81BA8ACEC00B7CB4D /* Custom Views */,
+				12CCA9071B9F42C600673562 /* Parties */,
 				128CC81E1B99FF1D00AB477B /* Support Files */,
 				128657C01B99F6FE0018C6FA /* Assets.xcassets */,
 			);
@@ -145,6 +159,7 @@
 				12CCA90A1B9F433C00673562 /* Parties.storyboard */,
 				124AC8CC1B9F526D006BA5AD /* PartiesConstants.swift */,
 				124AC8D21B9F76B5006BA5AD /* PartyTabBartViewController.swift */,
+				128C1CD31BA74F1F00EC6401 /* PartyLocationViewController.swift */,
 			);
 			name = Parties;
 			sourceTree = "<group>";
@@ -152,6 +167,7 @@
 		9A7132E2F3F6EE0BD839A6ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				128C1CD51BA752F200EC6401 /* CoreLocation.framework */,
 				12ACE3A41BA1CEF00064883B /* libGIDExShared.a */,
 				12ACE3A11BA1CEC90064883B /* GoogleSignIn.bundle */,
 				12ACE39D1BA1CCFA0064883B /* libGGLCore.a */,
@@ -293,7 +309,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				125E26FA1BA8AD2A00B7CB4D /* StatusBarContainerViewController.swift in Sources */,
 				124AC8D11B9F5340006BA5AD /* AuthenticationConstants.swift in Sources */,
+				128C1CD41BA74F1F00EC6401 /* PartyLocationViewController.swift in Sources */,
 				124AC8CD1B9F526D006BA5AD /* PartiesConstants.swift in Sources */,
 				124AC8CF1B9F52F3006BA5AD /* AuthenticationViewController.swift in Sources */,
 				12CCA9011B9F352600673562 /* AppContext.swift in Sources */,
