@@ -6,4 +6,6 @@ pod 'Google/SignIn'
 pod 'Fabric'
 pod 'TwitterKit'
 pod 'TwitterCore'
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
 end

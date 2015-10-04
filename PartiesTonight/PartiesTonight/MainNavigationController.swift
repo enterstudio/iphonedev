@@ -10,7 +10,7 @@ import UIKit
 
 enum PrimaryScreen: String {
     case Feed = "Feed"
-    case Authentiation = "Authentication"
+    case Authentication = "Authentication"
 }
 
 /** Root view controller for app. It controls the 'main' visible view/view controller of the app. */
@@ -22,9 +22,9 @@ class MainNavigationController: UINavigationController {
     
     var initialDisplayScreen: PrimaryScreen {
         if appContext.isRegistrationComplete && !isLoggedIn {
-            return PrimaryScreen.Feed
+            return PrimaryScreen.Authentication
         } else {
-            return PrimaryScreen.Feed
+            return PrimaryScreen.Authentication
         }
     }
     
@@ -42,7 +42,7 @@ class MainNavigationController: UINavigationController {
         }
         
         switch (screen) {
-            case .Authentiation:
+            case .Authentication:
                 newRootVC = AuthenticationConstants.storyboard.instantiateViewControllerWithIdentifier(AuthenticationConstants.AuthenticationViewControllerId.Login.rawValue)
             
             case .Feed:

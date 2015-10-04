@@ -23,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
 //        mainNC = self.window?.rootViewController as! PartyTabBartViewController
 //        mainNC.switchToPrimaryScreen(mainNC.initialDisplayScreen, animationOptions: nil)
-        PartiesConstants.storyboard.instantiateViewControllerWithIdentifier(PartiesConstants.PartiesViewControllerId.PartyTabBar.rawValue)      
+//        PartiesConstants.storyboard.instantiateViewControllerWithIdentifier(PartiesConstants.PartiesViewControllerId.PartyTabBar.rawValue)
+        AuthenticationConstants.storyboard.instantiateViewControllerWithIdentifier(AuthenticationConstants.AuthenticationViewControllerId.Login.rawValue)
         
         /** Initialize Google sign-in */
         var configureError: NSError?
