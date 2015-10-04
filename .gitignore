@@ -686,3 +686,8 @@ PartiesTonight/Pods/TwitterKit/TwitterKit.framework/TwitterKit
 PartiesTonight/Pods/TwitterKit/TwitterKit.framework/Headers/Twitter.h
 PartiesTonight/Pods/TwitterKit/TwitterKit.framework/Headers/TwitterKit.h
 PartiesTonight/Pods/TwitterKit/TwitterKit.framework/Headers/TWTRAPIClient.h
+PartiesTonight/Pods/Pods.xcodeproj/xcuserdata/mihailtihonchik.xcuserdatad/xcschemes/Bolts.xcscheme
+PartiesTonight/Pods/Pods.xcodeproj/xcuserdata/mihailtihonchik.xcuserdatad/xcschemes/FBSDKCoreKit.xcscheme
+PartiesTonight/Pods/Pods.xcodeproj/xcuserdata/mihailtihonchik.xcuserdatad/xcschemes/FBSDKLoginKit.xcscheme
+PartiesTonight/Pods/Pods.xcodeproj/xcuserdata/mihailtihonchik.xcuserdatad/xcschemes/Pods-PartiesTonight.xcscheme
+PartiesTonight/Pods/Pods.xcodeproj/xcuserdata/mihailtihonchik.xcuserdatad/xcschemes/xcschememanagement.plist
