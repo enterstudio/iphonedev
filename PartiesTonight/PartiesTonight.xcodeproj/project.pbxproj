@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		124AC8CD1B9F526D006BA5AD /* PartiesConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124AC8CC1B9F526D006BA5AD /* PartiesConstants.swift */; };
+		120534FE1BC3FDCC00FB2671 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120534FD1BC3FDCC00FB2671 /* AppConstants.swift */; settings = {ASSET_TAGS = (); }; };
+		12464AC11BC30F58002C43CF /* PartyTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12464AC01BC30F58002C43CF /* PartyTabBarViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		12464AC31BC30FB1002C43CF /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12464AC21BC30FB1002C43CF /* UIStoryboard+Extension.swift */; settings = {ASSET_TAGS = (); }; };
 		124AC8CF1B9F52F3006BA5AD /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124AC8CE1B9F52F3006BA5AD /* AuthenticationViewController.swift */; };
-		124AC8D11B9F5340006BA5AD /* AuthenticationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124AC8D01B9F5340006BA5AD /* AuthenticationConstants.swift */; };
-		124AC8D31B9F76B5006BA5AD /* PartyTabBartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124AC8D21B9F76B5006BA5AD /* PartyTabBartViewController.swift */; };
 		125E26FA1BA8AD2A00B7CB4D /* StatusBarContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E26F91BA8AD2A00B7CB4D /* StatusBarContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		128657BA1B99F6FE0018C6FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128657B91B99F6FE0018C6FA /* AppDelegate.swift */; };
 		128657BF1B99F6FE0018C6FA /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128657BD1B99F6FE0018C6FA /* Authentication.storyboard */; };
@@ -19,19 +19,16 @@
 		128C1CD41BA74F1F00EC6401 /* PartyLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128C1CD31BA74F1F00EC6401 /* PartyLocationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		128CC8201B99FF7A00AB477B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 128CC81F1B99FF7A00AB477B /* GoogleService-Info.plist */; };
 		12CCA8F71B9F319100673562 /* PartyFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CCA8F61B9F319100673562 /* PartyFeedViewController.swift */; };
-		12CCA8FC1B9F330700673562 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CCA8FB1B9F330700673562 /* MainNavigationController.swift */; };
-		12CCA8FF1B9F33DF00673562 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CCA8FE1B9F33DF00673562 /* AppConstants.swift */; };
 		12CCA9011B9F352600673562 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CCA9001B9F352600673562 /* AppContext.swift */; };
-		12CCA9041B9F36CC00673562 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CCA9031B9F36CC00673562 /* UIViewController+Extension.swift */; };
 		12CCA90B1B9F433C00673562 /* Parties.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CCA90A1B9F433C00673562 /* Parties.storyboard */; };
 		5898397CD1C9AA1FCA04DFE4 /* libPods-PartiesTonight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF18047A0F940B04D0BC54D /* libPods-PartiesTonight.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		124AC8CC1B9F526D006BA5AD /* PartiesConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartiesConstants.swift; sourceTree = "<group>"; };
+		120534FD1BC3FDCC00FB2671 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		12464AC01BC30F58002C43CF /* PartyTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyTabBarViewController.swift; sourceTree = "<group>"; };
+		12464AC21BC30FB1002C43CF /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		124AC8CE1B9F52F3006BA5AD /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
-		124AC8D01B9F5340006BA5AD /* AuthenticationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationConstants.swift; sourceTree = "<group>"; };
-		124AC8D21B9F76B5006BA5AD /* PartyTabBartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyTabBartViewController.swift; sourceTree = "<group>"; };
 		125E26F91BA8AD2A00B7CB4D /* StatusBarContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarContainerViewController.swift; sourceTree = "<group>"; };
 		128657B61B99F6FE0018C6FA /* PartiesTonight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartiesTonight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		128657B91B99F6FE0018C6FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,10 +46,7 @@
 		12ACE3A11BA1CEC90064883B /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = Pods/GoogleSignIn/Resources/GoogleSignIn.bundle; sourceTree = "<group>"; };
 		12ACE3A41BA1CEF00064883B /* libGIDExShared.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGIDExShared.a; path = Pods/GoogleSignIn/Libraries/libGIDExShared.a; sourceTree = "<group>"; };
 		12CCA8F61B9F319100673562 /* PartyFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyFeedViewController.swift; sourceTree = "<group>"; };
-		12CCA8FB1B9F330700673562 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
-		12CCA8FE1B9F33DF00673562 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		12CCA9001B9F352600673562 /* AppContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
-		12CCA9031B9F36CC00673562 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		12CCA90A1B9F433C00673562 /* Parties.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Parties.storyboard; sourceTree = "<group>"; };
 		50538336A421BB0EC0AA9EA5 /* Pods-PartiesTonight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartiesTonight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartiesTonight/Pods-PartiesTonight.debug.xcconfig"; sourceTree = "<group>"; };
 		5BDF5EFD21F92B818AD8EAD9 /* Pods-PartiesTonight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartiesTonight.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartiesTonight/Pods-PartiesTonight.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +99,7 @@
 				12CCA9051B9F429200673562 /* Authentication */,
 				12CCA8FD1B9F33BF00673562 /* Common */,
 				125E26F81BA8ACEC00B7CB4D /* Custom Views */,
+				12CCA9021B9F369A00673562 /* Extensions */,
 				12CCA9071B9F42C600673562 /* Parties */,
 				128CC81E1B99FF1D00AB477B /* Support Files */,
 				128657C01B99F6FE0018C6FA /* Assets.xcassets */,
@@ -126,8 +121,7 @@
 		12CCA8FD1B9F33BF00673562 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				12CCA9021B9F369A00673562 /* Extensions */,
-				12CCA8FE1B9F33DF00673562 /* AppConstants.swift */,
+				120534FD1BC3FDCC00FB2671 /* AppConstants.swift */,
 				12CCA9001B9F352600673562 /* AppContext.swift */,
 			);
 			name = Common;
@@ -136,7 +130,7 @@
 		12CCA9021B9F369A00673562 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				12CCA9031B9F36CC00673562 /* UIViewController+Extension.swift */,
+				12464AC21BC30FB1002C43CF /* UIStoryboard+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -146,7 +140,6 @@
 			children = (
 				128657BD1B99F6FE0018C6FA /* Authentication.storyboard */,
 				124AC8CE1B9F52F3006BA5AD /* AuthenticationViewController.swift */,
-				124AC8D01B9F5340006BA5AD /* AuthenticationConstants.swift */,
 			);
 			name = Authentication;
 			sourceTree = "<group>";
@@ -154,12 +147,10 @@
 		12CCA9071B9F42C600673562 /* Parties */ = {
 			isa = PBXGroup;
 			children = (
-				12CCA8FB1B9F330700673562 /* MainNavigationController.swift */,
 				12CCA8F61B9F319100673562 /* PartyFeedViewController.swift */,
 				12CCA90A1B9F433C00673562 /* Parties.storyboard */,
-				124AC8CC1B9F526D006BA5AD /* PartiesConstants.swift */,
-				124AC8D21B9F76B5006BA5AD /* PartyTabBartViewController.swift */,
 				128C1CD31BA74F1F00EC6401 /* PartyLocationViewController.swift */,
+				12464AC01BC30F58002C43CF /* PartyTabBarViewController.swift */,
 			);
 			name = Parties;
 			sourceTree = "<group>";
@@ -310,17 +301,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				125E26FA1BA8AD2A00B7CB4D /* StatusBarContainerViewController.swift in Sources */,
-				124AC8D11B9F5340006BA5AD /* AuthenticationConstants.swift in Sources */,
+				120534FE1BC3FDCC00FB2671 /* AppConstants.swift in Sources */,
+				12464AC11BC30F58002C43CF /* PartyTabBarViewController.swift in Sources */,
 				128C1CD41BA74F1F00EC6401 /* PartyLocationViewController.swift in Sources */,
-				124AC8CD1B9F526D006BA5AD /* PartiesConstants.swift in Sources */,
 				124AC8CF1B9F52F3006BA5AD /* AuthenticationViewController.swift in Sources */,
+				12464AC31BC30FB1002C43CF /* UIStoryboard+Extension.swift in Sources */,
 				12CCA9011B9F352600673562 /* AppContext.swift in Sources */,
 				12CCA8F71B9F319100673562 /* PartyFeedViewController.swift in Sources */,
-				12CCA8FC1B9F330700673562 /* MainNavigationController.swift in Sources */,
-				12CCA9041B9F36CC00673562 /* UIViewController+Extension.swift in Sources */,
 				128657BA1B99F6FE0018C6FA /* AppDelegate.swift in Sources */,
-				12CCA8FF1B9F33DF00673562 /* AppConstants.swift in Sources */,
-				124AC8D31B9F76B5006BA5AD /* PartyTabBartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,13 +366,14 @@
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -434,6 +423,7 @@
 			baseConfigurationReference = 50538336A421BB0EC0AA9EA5 /* Pods-PartiesTonight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = PartiesTonight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

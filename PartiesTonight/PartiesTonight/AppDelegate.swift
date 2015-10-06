@@ -14,17 +14,13 @@ import TwitterKit
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
-    var mainNC: MainNavigationController!
     var appContext = AppContext()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        UINavigationBar.appearance().backgroundColor = UIColor(red: 250/255, green: 212/255, blue: 0/255, alpha: 1.0)
-        
-//        mainNC = self.window?.rootViewController as! PartyTabBartViewController
-//        mainNC.switchToPrimaryScreen(mainNC.initialDisplayScreen, animationOptions: nil)
-//        PartiesConstants.storyboard.instantiateViewControllerWithIdentifier(PartiesConstants.PartiesViewControllerId.PartyTabBar.rawValue)
-        AuthenticationConstants.storyboard.instantiateViewControllerWithIdentifier(AuthenticationConstants.AuthenticationViewControllerId.Login.rawValue)
+        let mainViewController = UIStoryboard.loadPartiesTabBarController()
+        self.window?.rootViewController = mainViewController;
+        self.window?.makeKeyAndVisible()
         
         /** Initialize Google sign-in */
         var configureError: NSError?

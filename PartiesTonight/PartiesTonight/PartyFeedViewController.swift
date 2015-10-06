@@ -10,5 +10,13 @@ import UIKit
 
 class PartyFeedViewController: UIViewController {
 
+    override func viewDidAppear(animated: Bool) {
+        if (true) {
+            let authController = UIStoryboard.loadAuthenticationController()
+            if let authController = authController {
+                self.presentViewController(authController, animated: true, completion: nil)
+            }
+        }
+    }
 }
 
