@@ -18,6 +18,11 @@ extension UIStoryboard {
         let storyboard = UIStoryboard(name: partiesStoryboardName, bundle: nil)
         return storyboard.instantiateViewControllerWithIdentifier("PartyTabBarViewController") as! PartyTabBarViewController
     }
+    
+    class func loadSettingsController() -> UIViewController? {
+        let storyboard = UIStoryboard(name: partiesStoryboardName, bundle: nil)
+        return storyboard.instantiateViewControllerWithIdentifier("UserSettingsViewController") as! UserSettingsViewController
+    }
 
     // MARK - Authentication Storyboard
     class func loadAuthenticationController() -> UIViewController? {

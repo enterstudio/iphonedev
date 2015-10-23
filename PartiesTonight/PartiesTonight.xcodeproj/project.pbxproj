@@ -18,6 +18,7 @@
 		128657C41B99F6FE0018C6FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128657C21B99F6FE0018C6FA /* LaunchScreen.storyboard */; };
 		128C1CD41BA74F1F00EC6401 /* PartyLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128C1CD31BA74F1F00EC6401 /* PartyLocationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		128CC8201B99FF7A00AB477B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 128CC81F1B99FF7A00AB477B /* GoogleService-Info.plist */; };
+		128D2D521BDA8DB200177B44 /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128D2D511BDA8DB200177B44 /* UserSettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		12CCA8F71B9F319100673562 /* PartyFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CCA8F61B9F319100673562 /* PartyFeedViewController.swift */; };
 		12CCA9011B9F352600673562 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CCA9001B9F352600673562 /* AppContext.swift */; };
 		12CCA90B1B9F433C00673562 /* Parties.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CCA90A1B9F433C00673562 /* Parties.storyboard */; };
@@ -39,6 +40,7 @@
 		128C1CD31BA74F1F00EC6401 /* PartyLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyLocationViewController.swift; sourceTree = "<group>"; };
 		128C1CD51BA752F200EC6401 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		128CC81F1B99FF7A00AB477B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "PartiesTonight/Support Files/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		128D2D511BDA8DB200177B44 /* UserSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingsViewController.swift; sourceTree = "<group>"; };
 		12ACE39A1BA1CC2A0064883B /* PartiesTonight-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PartiesTonight-Bridging-Header.h"; path = "PartiesTonight/Support Files/PartiesTonight-Bridging-Header.h"; sourceTree = "<group>"; };
 		12ACE39B1BA1CCC70064883B /* libSignIn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSignIn.a; path = Pods/GoogleSignIn/Libraries/libSignIn.a; sourceTree = "<group>"; };
 		12ACE39D1BA1CCFA0064883B /* libGGLCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGGLCore.a; path = Pods/Google/Libraries/libGGLCore.a; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				12CCA9021B9F369A00673562 /* Extensions */,
 				12CCA9071B9F42C600673562 /* Parties */,
 				128CC81E1B99FF1D00AB477B /* Support Files */,
+				128D2D531BDA8E5A00177B44 /* User */,
 				128657C01B99F6FE0018C6FA /* Assets.xcassets */,
 			);
 			path = PartiesTonight;
@@ -116,6 +119,14 @@
 			);
 			name = "Support Files";
 			path = ..;
+			sourceTree = "<group>";
+		};
+		128D2D531BDA8E5A00177B44 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				128D2D511BDA8DB200177B44 /* UserSettingsViewController.swift */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 		12CCA8FD1B9F33BF00673562 /* Common */ = {
@@ -306,6 +317,7 @@
 				128C1CD41BA74F1F00EC6401 /* PartyLocationViewController.swift in Sources */,
 				124AC8CF1B9F52F3006BA5AD /* AuthenticationViewController.swift in Sources */,
 				12464AC31BC30FB1002C43CF /* UIStoryboard+Extension.swift in Sources */,
+				128D2D521BDA8DB200177B44 /* UserSettingsViewController.swift in Sources */,
 				12CCA9011B9F352600673562 /* AppContext.swift in Sources */,
 				12CCA8F71B9F319100673562 /* PartyFeedViewController.swift in Sources */,
 				128657BA1B99F6FE0018C6FA /* AppDelegate.swift in Sources */,
